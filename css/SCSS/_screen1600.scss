@@ -1,0 +1,125 @@
+@media screen and (max-width: 1600px) {
+    #header {
+        min-height: 50px;
+        
+        >div {
+            padding: 20px 20px;
+        }
+        
+        #logo {
+            margin-right: 20px;
+            width: 200px;
+        }
+        
+        #headr_cont  {
+            margin: 19px 0px 19px 5px;
+            font-size: 1.51em;
+            line-height: 145%;
+        }
+        
+        nav {
+            margin: 25px auto;
+            text-align: center;
+            
+            
+            ul li {
+                margin-right: 25/1634*100%;
+            }
+            ul li:before {
+                margin-right: 15px;
+            }
+        }
+    }
+    footer>div { 
+        margin: 55px auto;
+    }
+    
+    #main_slider {
+        
+        .slider {
+            
+            .slick-slide, .slide {
+                padding-bottom: 130px;
+                
+                h3 {
+                    font-size: 3.26em;
+                    margin-top: 130px;
+                }
+                
+                .slide_copy, .slide_info {
+                    bottom: 50px;
+                }
+            }
+            .slick-arrow {
+                bottom: 50px;
+            }
+        }
+    }
+
+    #advantages {
+        &>div {
+            padding: 47px 0px 18px;
+        }
+        
+        .karusel_advantages {
+            
+            div.slick-slide {
+                height: 120px;
+            }
+        }
+        
+    }
+    
+    #action {
+    
+        &>div {
+            min-height: 465px;
+        }
+        h2 {
+            margin-bottom: 84px;
+        }
+        
+    }
+    
+    #gallery {
+    
+        &>div {
+            padding: 67px 20px 35px;
+        }
+        .gallery {
+            div {
+                width: 370/1634*100%;
+            }
+        }
+    }
+    
+    #services {
+        &>div {
+            padding: 44px 20px 45px;
+        }
+        .service {
+            height: 220px;
+            
+            a {
+                font-size: 1.21em;
+                line-height: 145%;
+                
+                span {
+                    height: 60px;
+                    padding: 5px 80/333*100% 5px 15/333*100%;
+                }
+                
+            }
+        }
+    }
+    
+    #stages>div {
+        padding: 49px 20px 5px;
+        
+        li {
+            width: 330/1634*100%;
+            margin: 0 100/1634*100% 55px;
+        }
+    }
+    
+}

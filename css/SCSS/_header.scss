@@ -1,0 +1,96 @@
+/* Стили шапки */
+
+#header {
+    min-height: 105px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-color: $color_a;
+    color: #121a2d;
+    z-index: 10;
+    
+    >div {
+        padding: 32px 25px;
+        margin: 0 auto;
+        max-width: $max-width;
+        position: relative;
+        z-index: 2;
+    }
+    >div:after {
+        @include clear();
+    }
+    
+    #logo {
+	margin-right: 120/1634*100%;
+	width: 250px;
+	float: left;
+	font-size: 25px;
+        
+        img {
+            width: 100%;
+        }
+    }
+    
+    #headr_cont  {
+	margin: 21px 0px 21px 25/1634*100%;
+	float: right;
+	font-size: 1.71em;
+	line-height: 145%;
+        font-weight: bold;
+        
+        a {
+            color: #121a2d;
+            text-decoration: none;
+        }
+    }
+    
+    nav {
+	margin: 30px;
+	padding: 0;
+	text-align: left;
+	
+        
+        ul {
+            counter-reset:list;
+        }
+        ul li {
+            margin-right: 58/1634*100%;
+            text-transform: uppercase;
+            position: relative;
+            font-weight: bold;
+            display: inline-block;
+            vertical-align: top;
+        }
+        ul li:before {
+            counter-increment:list;
+            content: '0'counter(list); 
+            opacity: 0.2;
+            margin-right: 5px;
+        }
+        ul li a {
+            color: #14172a;
+            text-decoration: none;
+        }                    
+        ul li.active>a {
+            color: #fff;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
+    }
+    
+}
+
+#index #header {
+    background-color: #fff;
+    
+    &:before {
+        content: '';
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $color_a;
+    }
+}

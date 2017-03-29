@@ -1,0 +1,265 @@
+@media screen and (max-width: 450px) {
+    
+    
+    #header {
+	position: fixed;
+	
+	#logo {
+	    width: 100px;
+	}
+	#headr_cont {
+	    font-size: 1.11em;
+	    line-height: 145%;
+	    margin: 5px 0 5px 5px;
+	}
+        nav {
+            margin: 30px 19px 0;
+	    position: relative;
+	    
+	    .menu_batton_mob {
+		top: -25px;
+	    }
+        }
+        
+    }
+    footer>div {
+	.foo_left {
+	    text-align: center;
+	}
+	#foo_logo {
+	    float: none;
+	    margin: 0 auto 20px;
+	}
+    }
+    
+    #main_slider {
+	margin-top: 70px;
+	
+	> div::before {
+	    background: #1ecad1 url("../images/slide_bg.png") no-repeat scroll right center / auto 90%;
+	    width: 100%;
+	}
+        
+        .slider {
+            
+            .slick-slide, .slide {
+		padding-bottom: 50px;
+		
+		.slide_img {
+		    display: none;
+		}
+                h3 {
+                    font-size: 1.56em;
+                    margin-top: 30px;
+                }
+                
+                .slide_copy, .slide_info {
+                    position: static;
+                    width: 100%;
+                    text-align: left;
+		    font-size: 0.85em;
+                }
+            }
+        }
+    }
+    
+    #advantages {
+	padding-bottom: 0;
+	h2 {
+	    margin-bottom: 30px;
+	    padding: 0 20px;
+	}
+	
+	.karusel_advantages {
+	    div.slick-slide {
+		background-position: center top;
+		background-repeat: no-repeat;
+		height: 130px;
+		outline: medium none;
+		padding: 89px 30px 0px;
+		width: 290px;
+	    }
+	}
+	
+    }
+    
+    #services {
+        .service {
+	    width: 100%;
+	    a {
+		font-size: 0.98em;
+		line-height: 145%;
+	    }
+        }
+    }
+    
+    #action {
+	margin-top: 20px;
+    
+        >div {
+            min-height: 200px;
+	    padding-top: 20px;
+        }
+        h2 {
+            margin-bottom: 14px;
+	    margin-top: 0px;
+	    
+	    &:after{
+		display: none;
+	    }
+        }
+        .flicker, .action_img {
+            display: none;
+        }
+        
+        .slick-slider {
+            width: auto;
+	    
+            .slick-slide {
+                min-height: 1px;
+                padding-bottom: 80px;
+		h3 {
+		    font-size: 1.13em;
+		    line-height: 158%;
+		}
+		a.button {
+		    position: static;
+		    display: block;
+		    margin: 0 auto;
+		}
+	    }
+	    .slick-arrow {
+		height: 55px;
+		width: 55px;
+		background-size: 95%;
+	    }
+	    .slick-prev {
+		left: 0;
+		right: auto;
+	    }
+	    
+        }
+    }
+    
+    #gallery {
+        &>div {
+            padding: 47px 20px 20px;
+        }
+        .gallery {
+	    p{
+		a{
+		    display: inline-block; 
+		}
+		.other {
+		    margin-bottom: 30px;
+		}
+	    }
+            div {
+                width: 90%;
+            }
+        }
+    }
+    
+    
+    #reviews {
+	padding: 60px 20px;
+	
+	&>div {
+	    padding: 30px;
+	}
+	
+	.reviews_slider  {
+	    
+	    .slick-slide { 
+		.avatar {
+		    float: none;
+		    display: block;
+		    margin: 0 auto 20px;
+		}
+		p {
+		    margin-left:0px;
+		}
+	    }
+	    
+	    .slick-next {
+		    right: 0;
+		    left: auto;
+		    margin-left: 0;
+	    }
+	    
+	    .slick-prev {
+		margin-left: 0px;
+	    }
+	}
+    }
+    
+    #partners {
+	.karusel_partners {
+	    min-height: 150px;
+	}
+	h2 {
+	    margin-bottom: 42px;
+	}
+	
+	.slick-slider .slick-dots {
+	    bottom: -25px;
+	}
+    }
+    
+    .form input, .form textarea, .form select {
+	width: 70%;
+    }
+
+    form.form textarea {
+	min-width: 70%;
+	max-width: 70%;
+    }
+    form.form input[type="submit"] {
+	width: 215px;
+    }
+    
+    #main_form {
+    
+	&>div {
+	    max-width: 1288px;
+	    margin: 0 auto;
+	    color: #fff;
+	    text-align: center;
+	    padding: 35px 20px 5px;
+	}
+	
+	h2 {
+	    margin-bottom: 30px;
+	}
+	
+	.cont {
+	    margin-right: 34px;
+	    font-size: 1.05em;
+	    line-height: 145%;
+	    padding-left: 35px;
+	    background-size: 25px auto;
+	}
+	form {
+	    
+	    p {
+		text-align: center;
+	    }
+	}
+    }
+    
+    #stages>div {
+        padding: 49px 20px 5px;
+        
+        li {
+            width: 80%;
+            margin: 0 auto 35px;
+	    text-align: center;
+	    display: block;
+	    
+	    &:before {
+		margin-left: auto;
+		margin-right: auto;
+	    }
+        }
+    }
+}

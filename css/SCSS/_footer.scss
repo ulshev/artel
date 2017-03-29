@@ -1,0 +1,102 @@
+/* Стили подвала */
+
+#pre_foo {
+    clear: both;
+    display: table-row;
+    height: 100%;
+}
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #14172a;
+    z-index: 2;
+    display: table-row;
+    padding: 1px 0;
+    
+    
+    >div { 
+        margin: 85px auto;
+        max-width: 1288px;
+        color: #fff;
+        padding-left: 20px;
+    } 
+    >div:after { 
+        @include clear();
+    }
+    p {
+        margin-bottom: 25px
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $color_a;
+        text-decoration: underline;
+    }
+    .foo_left {
+        float: left;
+        margin-right: 20px;
+    }
+    .foo_main_menu {
+        float: right;
+        width: 935/1288*100%;
+        padding: 11px 20px 20px;
+        
+        ul {
+            border-bottom: 1px solid $color_a;
+            padding-bottom: 20px;
+        }
+        li {
+            display: inline-block;
+            margin-right: 80/935*100%;
+        }
+        li:last-child {
+            margin-right: 0;
+        }
+    }
+        
+    .foo_menu {
+        float: right;
+        width: 935/1288*100%;
+        padding: 0 20px;
+        
+        ul {
+            display: inline-block;
+            vertical-align: top;
+            font: 300 0.86em/145% $font_family_r;
+            letter-spacing: 0.025em;
+            width: 215/935*100%;
+            margin-right: 20/935*100%
+        }
+        ul:last-child {
+            margin-right: 0;
+        }
+        li {
+            margin-bottom: 15px;
+            opacity: 0.5;
+        }
+        
+    }
+        
+    #foo_logo {
+        margin-bottom: 20px;
+        width: 189px;
+    }
+    #foo_logo img {
+        width: 100%;
+    }
+    #social a {
+        margin-right: 10px;
+        opacity: 0.5;
+    }
+    #social a:hover {
+        opacity: 1;
+    }
+    
+}
+
+#index footer {
+    display: block;
+}

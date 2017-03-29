@@ -1,0 +1,264 @@
+@media screen and (max-width: 1000px) {
+    #header {
+	
+	position: fixed;
+	box-shadow: 0 0 10px rgba(0,0,0,0.30);
+	
+        nav {
+            margin: 50px 19px 0;
+	    position: relative;
+	    
+	    .menu_batton_mob {
+		height: 30px;
+		border-bottom: 10px solid #14172a;
+		border-top: 10px solid #14172a;
+		border-radius: 3px;
+		display: block;
+		width: 50px;
+		position: absolute;
+		top: -50px;
+		left: 50%;
+		margin-left: -25px;
+		
+		&:after {
+		    content: '';
+		    position: absolute;
+		    height: 10px;
+		    width: 100%;
+		    top: 10px;
+		    left: 0;
+		    background-color: #14172a;
+		}
+	    }
+            
+            ul {
+		position: absolute;
+		width: 200px;
+		left: 50%;
+		margin-left: -110px;
+		margin-top: 10px;
+		padding: 15px 10px;
+		background-color: #fff;
+		box-shadow: 0 0 10px rgba(0,0,0,0.3)
+	    }
+            ul li {
+                margin-right: 0;
+                padding-left: 30px;
+		display: block;
+		text-align: left;
+		font-size: 1.3em;
+		
+		a {
+		    display: inline-block;
+		    padding: 15px 0;
+		}
+            }
+            ul li:before {
+                margin-right: 5px;
+            }
+	    
+	    
+        }
+        
+    }
+    footer>div { 
+        margin: 35px auto;
+	
+        .foo_main_menu {
+	    float: none;
+	    width: auto;
+	    margin-top: -25px;
+	    margin-left: 220px;
+            li {
+                display: none;
+            }
+        }
+	
+	.foo_menu {
+	    float: none;
+	    width: auto;
+	    margin-left: 220px;
+	    
+	    ul {
+		width: 45%;
+	    }
+	}
+    }
+    
+    .main_section h2 {
+	font-size: 2.34em;
+	line-height: 145%;
+    }
+    
+    #main_slider {
+	margin-top: 93px;
+        
+        .slider {
+            
+            .slick-slide, .slide {
+                padding-bottom: 80px;
+                
+		.slide_img {
+		    margin-left: 10px;
+		}
+		
+                h3 {
+                    font-size: 1.46em;
+                    margin-top: 30px;
+                }
+                
+                .slide_copy, .slide_info {
+                    bottom: 40px;
+                    width: 50%;
+                    font-size: 0.75em;
+                }
+                a.button {
+                    width: 120px;
+		    padding: 15px 15px 10px;
+                }
+            }
+            .slick-arrow {
+                bottom: 10px;
+            }
+	    
+	    .slick-next {
+		margin-right: 0;
+	    }
+	    .slick-prev {
+		margin-left: 0;
+	    }
+        }
+    }
+    
+    #action {
+    
+        &>div {
+            min-height: 200px;
+        }
+        h2 {
+            margin-bottom: 54px;
+	    
+	    &:after{
+		display: none;
+	    }
+        }
+        .flicker, .action_img {
+            display: none;
+        }
+        
+        .slick-slider {
+            width: auto;
+            
+            .slick-slide {
+                min-height: 1px;
+                padding-bottom: 80px;
+		h3 {
+		    font-size: 1.63em;
+		    line-height: 158%;
+		}
+            }
+        }
+    }
+    
+    #gallery {
+        &>div {
+            padding: 47px 20px 20px;
+        }
+        .gallery {
+	    p{
+		a{
+		    font-size: 0.70em;
+		}
+		
+	    }
+            div {
+                width: 44.2%;
+            }
+        }
+    }
+    
+    #services {
+        .service {
+	    width: 49.3%;
+        }
+    }
+    
+    
+    #reviews {
+	padding: 60px 20px;
+	
+	&>div {
+	    padding: 30px;
+	}
+	
+	.reviews_slider  {
+	    .slick-next {
+		    right: 0;
+		    left: auto;
+		    margin-left: 0;
+	    }
+	}
+    }
+    
+    .slick-slider {
+	.slick-prev {
+		left: 20px;
+		margin-left: 0;
+	}
+	.slick-next {
+		right: 20px;
+		margin-right: 0;
+        
+	}
+    }
+    
+    .form input, .form textarea, .form select {
+	width: 255px;
+    }
+
+    form.form textarea {
+	min-width: 255px;
+	max-width: 255px;
+    }
+    form.form input[type="submit"] {
+	width: 215px;
+    }
+    
+    #main_form {
+    
+	&>div {
+	    max-width: 1288px;
+	    margin: 0 auto;
+	    color: #fff;
+	    text-align: center;
+	    padding: 35px 20px 25px;
+	}
+	
+	h2 {
+	    margin-bottom: 30px;
+	}
+	
+	.cont {
+	    margin-right: 34px;
+	    font-size: 1.05em;
+	    line-height: 145%;
+	    padding-left: 35px;
+	    background-size: 25px auto;
+	}
+	form {
+	    
+	    p {
+		text-align: center;
+	    }
+	}
+    }
+    
+    #stages>div {
+        padding: 49px 20px 5px;
+        
+        li {
+            width: 47.5%;
+            margin: 0 1% 55px;
+        }
+    }
+}

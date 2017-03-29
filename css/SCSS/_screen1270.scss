@@ -1,0 +1,163 @@
+@media screen and (max-width: 1270px) {
+    #header {
+        >div {
+            font-size: 0.83em;
+            line-height: 145%;
+        }
+        
+        #logo {
+            width: 170px;
+        }
+        
+        #headr_cont  {
+            margin: 14px 0px 14px 5px;
+        }
+        
+        nav {
+            margin: 19px;
+            
+            
+            ul li {
+                margin-right: 15/1634*100%;
+                padding-left: 0px;
+            }
+            ul li:before {
+                margin-right: 5px;
+            }
+        }
+        
+    }
+    footer>div { 
+        margin: 35px auto;
+        
+         .foo_main_menu {
+            li {
+                margin-right: 60/935*100%;
+            }
+        }
+    }
+    
+    #main_slider {
+        
+        .slider {
+            
+            .slick-slide, .slide {
+                padding-bottom: 110px;
+                
+                h3 {
+                    font-size: 2.46em;
+                    margin-top: 100px;
+                }
+                
+                .slide_copy, .slide_info {
+                    bottom: 40px;
+                    width: 40%;
+                    font-size: 0.85em;
+                }
+                a.button {
+                    width: 140px;
+                }
+            }
+            .slick-arrow {
+                bottom: 40px;
+            }
+        }
+    }
+    
+        #action {
+    
+        &>div {
+            min-height: 405px;
+        }
+        h2 {
+            margin-bottom: 74px;
+        }
+        
+        @keyframes flicker_animation {
+            from {
+              width: 201px;
+              top: -35px;
+              left: 65px;
+            }
+            to {
+              width: 150px;
+              top: -4px;
+              left: 85px;
+            }
+        }
+        @-webkit-keyframes flicker_animation {
+            from {
+              width: 201px;
+              top: -35px;
+              left: 65px;
+            }
+            to {
+              width: 150px;
+              top: -4px;
+              left: 89px;
+            }
+        }
+        .flicker {
+            width: 201px;
+            height: 201px;
+            top: -45px;
+            left: 46px;
+        }
+        
+        .slick-slider {
+            margin: 0;
+            width: 45%;
+            
+            .slick-slide {
+                min-height: 251px;
+                padding-bottom: 80px;
+            }
+        }
+    }
+    
+     #gallery {
+        &>div {
+            padding: 47px 20px 20px;
+        }
+        .gallery {
+            div {
+                width: 356/1634*100%;
+            }
+        }
+    }
+    
+    
+    #services {
+        &>div {
+            padding: 34px 20px 35px;
+        }
+        .service {
+            height: 180px;
+            margin: 0 0 8px 2px;
+            
+            a {
+                font-size: 0.98em;
+                line-height: 145%;
+                
+                span {
+                    height: 45px;
+                    padding: 5px 80/333*100% 5px 15/333*100%;
+                }
+                
+            }
+        }
+    }
+    
+    #reviews {
+	padding: 80px 20px;
+    }
+    
+    #stages>div {
+        padding: 49px 20px 5px;
+        
+        li {
+            width: 400/1634*100%;
+            margin: 0 70/1634*100% 55px;
+        }
+    }
+}

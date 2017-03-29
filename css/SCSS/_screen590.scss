@@ -1,0 +1,262 @@
+@media screen and (max-width: 590px) {
+    
+    
+    #header {
+	position: fixed;
+	
+	#logo {
+	    width: 120px;
+	}
+	#headr_cont {
+	    font-size: 1.31em;
+	    line-height: 145%;
+	    margin: 10px 0 10px 5px;
+	}
+        nav {
+            margin: 30px 19px 0;
+	    position: relative;
+	    
+	    .menu_batton_mob {
+		height: 15px;
+		border-bottom: 5px solid #14172a;
+		border-top: 5px solid #14172a;
+		width: 25px;
+		top: -20px;
+		margin-left: -13px;
+		
+		&:after {
+		    height: 5px;
+		    top: 5px;
+		}
+	    }
+        }
+        
+    }
+    footer>div {
+	padding-right: 20px;
+	margin-bottom: 20px;
+	
+        .foo_main_menu, .foo_menu {
+            display: none;
+        }
+	.foo_left {
+	    float: none;
+	    margin-right: 0;
+	    text-align: right;
+	}
+	#foo_logo {
+	    float: left;
+	}
+	#copy {
+	    font-size: 12px;
+	    padding-top: 3px;
+	    margin-bottom: 15px;
+	}
+    }
+    
+    .main_section h2 {
+	font-size: 1.84em;
+	line-height: 145%;
+    }
+    
+    a.button {
+	font-size: 14px;
+	height: 26px;
+	padding: 15px 5px 9px;
+	width: 140px;
+    }
+    
+    #main_slider {
+	margin-top: 80px;
+        
+        .slider {
+            
+            .slick-slide, .slide {
+		
+                h3 {
+                    font-size: 1.26em;
+                    margin-top: 20px;
+		    margin-bottom: 0px
+                }
+                
+                .slide_copy, .slide_info {
+                    bottom: 40px;
+                    width: 50%;
+                    font-size: 0.65em;
+                }
+                a.button {
+                    width: 120px;
+		    padding: 15px 15px 10px;
+		    font-size: 0.85em;
+                }
+            }
+            .slick-arrow {
+                bottom: 10px;
+            }
+        }
+    }
+    
+    #advantages {
+	padding-bottom: 0;
+	h2 {
+	    margin-bottom: 30px;
+	}
+	
+	.karusel_advantages {
+	    div.slick-slide {
+		background-position: center top;
+		background-repeat: no-repeat;
+		height: 130px;
+		outline: medium none;
+		padding: 89px 30px 0px;
+		width: 290px;
+	    }
+	}
+	
+    }
+    
+    #services {
+        .service {
+	    width: 45.3%;
+	    a {
+		font-size: 0.78em;
+		line-height: 145%;
+	    }
+        }
+    }
+    
+    #action {
+    
+        &>div {
+            min-height: 200px;
+        }
+        h2 {
+            margin-bottom: 34px;
+	    margin-top: -58px;
+	    
+	    &:after{
+		display: none;
+	    }
+        }
+        .flicker, .action_img {
+            display: none;
+        }
+        
+        .slick-slider {
+            width: auto;
+            
+            .slick-slide {
+                min-height: 1px;
+                padding-bottom: 80px;
+		h3 {
+		    font-size: 1.23em;
+		    line-height: 158%;
+		}
+	    }
+	    .slick-arrow {
+		height: 55px;
+		width: 55px;
+		background-size: 95%;
+	    }
+	    
+        }
+    }
+    
+    #gallery {
+        &>div {
+            padding: 47px 20px 20px;
+        }
+        .gallery {
+	    p{
+		a{
+		    font-size: 0.70em;
+		}
+		
+	    }
+            div {
+                width: 44.2%;
+            }
+        }
+    }
+    
+    
+    #reviews {
+	padding: 60px 20px;
+	
+	&>div {
+	    padding: 30px;
+	}
+	
+	.reviews_slider  {
+	    
+	    .slick-slide { 
+		.avatar {
+		    float: none;
+		    display: block;
+		    margin: 0 auto 20px;
+		}
+		p {
+		    margin-left:0px;
+		}
+		
+	    }
+	    
+	    .slick-next {
+		    right: 0;
+		    left: auto;
+		    margin-left: 0;
+	    }
+	    
+	    .slick-prev {
+		margin-left: 0px;
+	    }
+	}
+    }
+    
+    #partners {
+	.karusel_partners {
+	    min-height: 150px;
+	}
+	h2 {
+	    margin-bottom: 42px;
+	}
+    }
+    
+    #main_form {
+    
+	&>div {
+	    max-width: 1288px;
+	    margin: 0 auto;
+	    color: #fff;
+	    text-align: center;
+	    padding: 35px 20px 5px;
+	}
+	
+	h2 {
+	    margin-bottom: 30px;
+	}
+	
+	.cont {
+	    margin-right: 34px;
+	    font-size: 1.05em;
+	    line-height: 145%;
+	    padding-left: 35px;
+	    background-size: 25px auto;
+	}
+	form {
+	    
+	    p {
+		text-align: center;
+	    }
+	}
+    }
+    
+    #stages>div {
+        padding: 49px 20px 5px;
+        
+        li {
+            width: 47.5%;
+            margin: 0 1% 55px;
+        }
+    }
+}
