@@ -835,6 +835,7 @@ footer #social a:hover {
   margin: 0 3px 8px 2px;
   background: url(images/foto1.jpg) center center no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 #index #services .service a {
   color: #fff;
@@ -844,7 +845,7 @@ footer #social a:hover {
   font-size: 1.61em;
   line-height: 145%;
   display: table;
-  width: 100%;
+  width: 100.5%;
   height: 100%;
 }
 #index #services .service a:before {
@@ -857,7 +858,7 @@ footer #social a:hover {
   height: 90px;
   vertical-align: middle;
   width: 100%;
-  padding: 5px 24.02402% 5px 6.00601%;
+  padding: 5px 40px 5px 15px;
   background: #1ecad1 url(images/arrow.png) 98.7% center no-repeat;
   background-size: auto 90%;
   line-height: 145%;
@@ -1003,7 +1004,7 @@ footer #social a:hover {
   right: 95px;
 }
 #action .slick-slider .slick-next {
-  background: url(images/arrow_right2.png) 100% 3px no-repeat;
+  background: url(images/arrow_right2.png) center no-repeat;
   right: 0;
   margin-right: 0;
 }
@@ -1689,6 +1690,19 @@ footer #social a:hover {
 #reviews.no_bg div.reviews_items > p {
   text-align: center;
   margin-left: 0;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  margin-top: -250px;
+  left: 50%;
+  margin-left: -250px;
+  background: #1ecad1 url(images/popup_bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+.popup .close {
+  position: absolute;
 }
 
 @media screen and (max-width: 1600px) {

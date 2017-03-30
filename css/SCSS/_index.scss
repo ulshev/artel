@@ -228,6 +228,7 @@
         margin: 0 3px 8px 2px;
         background: url(images/foto1.jpg) center center no-repeat;
         background-size: cover;
+        overflow: hidden;
         
         a {
             color: #fff;
@@ -237,7 +238,7 @@
             font-size: 1.61em;
             line-height: 145%;
             display: table;
-            width: 100%;
+            width: 100.5%;
             height: 100%;
             
             &:before {
@@ -251,7 +252,7 @@
                 height: 90px;
                 vertical-align: middle;
                 width: 100%;
-                padding: 5px 80/333*100% 5px 20/333*100%;
+                padding: 5px 40px 5px 15px;
                 background: $color_a url(images/arrow.png) 98.7% center no-repeat;
                 background-size: auto 90%;
                 line-height: 145%;
@@ -417,7 +418,7 @@
             right: 95px;
 	}
 	.slick-next {
-	    background:  url(images/arrow_right2.png) 100% 3px no-repeat;
+	    background:  url(images/arrow_right2.png) center no-repeat;
 	    right: 0;
 	    margin-right: 0;
 	}
