@@ -256,12 +256,56 @@
                 text-decoration: underline;
             }
         }
+        
+        a.button {
+            background-color: #14172a;
+            font-size: 16px;
+            width: 190px;
+            
+            &:hover {
+                background-color: #56575c;
+            }
+        }
         .cont+.cont {
             background-image: url(images/cont_icon_letter.png);
         }
         .cont+.cont+.cont {
             margin-right: 0px;
             background-image: url(images/cont_icon_address.png);
+        }
+    }
+    
+}
+
+
+#reviews.no_bg {
+    background: none;
+    padding: 0px 20px 30px;
+    div.reviews_items {
+        background: none;
+        max-width: 1300px;
+        padding: 0;
+        text-align: center;
+        
+        >div {
+            background-color: #f8f8fa;
+            color: #14172a;
+            padding: 30px 30px 0;
+            width: 42%;
+            text-align: left;
+            float: left;
+            
+            &:after {
+                @include clear();
+            }
+        }
+        >div:nth-child(2n) {
+            margin: 0 0 50px 100%-70/1288*100%-42%;
+            float: none;
+        }
+        >p{
+            text-align: center;
+            margin-left: 0;
         }
     }
     

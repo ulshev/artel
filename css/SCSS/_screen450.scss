@@ -168,15 +168,7 @@
 	
 	.reviews_slider  {
 	    
-	    .slick-slide { 
-		.avatar {
-		    float: none;
-		    display: block;
-		    margin: 0 auto 20px;
-		}
-		p {
-		    margin-left:0px;
-		}
+	    .slick-slide {
 	    }
 	    
 	    .slick-next {
@@ -189,6 +181,15 @@
 		margin-left: 0px;
 	    }
 	}
+	 
+		.avatar {
+		    float: none;
+		    display: block;
+		    margin: 0 auto 20px;
+		}
+		p {
+		    margin-left:0px;
+		}
     }
     
     #partners {

@@ -545,6 +545,22 @@
                 display: block;
                 clear: both;
             }
+        }
+        .slick-prev {
+		left: 0%;
+		background-position: 0 -12px;
+		text-align: right;
+		margin-left: 185px;
+	}
+	.slick-next {
+		background-position: 100% -12px;
+		right: auto;
+                left: 0;
+		margin-left: 310px;
+                margin-right: 0;
+        
+	}
+    }
             .avatar {
                 width: 146px;
                 height: 146px;
@@ -574,30 +590,15 @@
                     background: url(images/time_icon.png) left center no-repeat;
                     margin-right: 30px;
                     white-space: nowrap;
+                    margin-bottom: 20px;
+                    display: inline-block;
                 }
             }
             span + p {
                 margin-top: 7px;
                 line-height: 213%;
             }
-        }
         
-        
-	.slick-prev {
-		left: 0%;
-		background-position: 0 -12px;
-		text-align: right;
-		margin-left: 185px;
-	}
-	.slick-next {
-		background-position: 100% -12px;
-		right: auto;
-                left: 0;
-		margin-left: 310px;
-                margin-right: 0;
-        
-	}
-    }
 }
 
 
@@ -729,4 +730,30 @@
     }
 }
 
-
+.fancybox-enabled body {
+    overflow: auto;
+    
+    .fancybox-controls--canGrab .fancybox-placeholder {
+        max-width: 1000px;
+        
+    }
+    
+    .fancybox-button--left, .fancybox-button--right {
+        position: fixed;
+        margin-top: -24px;
+        top: 50%;
+        left: 50px;
+        width: 26px;
+        height: 48px;
+        background: url(images/arr_left.png) 50% center no-repeat;
+        
+        &:after {
+            display: none;
+        }
+    }
+    .fancybox-button--right {
+        right: 50px;
+        left: auto;
+        background: url(images/arr_right.png) 50% center no-repeat;
+    }
+}

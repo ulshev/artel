@@ -287,7 +287,7 @@ a.button:active {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(30, 202, 209, 0.8) url(images/eye.png) center center no-repeat;
+  background: rgba(30, 202, 209, 0.6) url(images/eye.png) center center no-repeat;
   display: none;
 }
 .gallery .gallery_fotos div a:hover:after {
@@ -1163,38 +1163,6 @@ footer #social a:hover {
   display: block;
   clear: both;
 }
-#reviews .reviews_slider .slick-slide .avatar {
-  width: 146px;
-  height: 146px;
-  border-radius: 80px;
-  overflow: hidden;
-  float: left;
-  line-height: 146px;
-  text-align: center;
-}
-#reviews .reviews_slider .slick-slide .avatar img {
-  vertical-align: middle;
-  min-width: 100%;
-}
-#reviews .reviews_slider .slick-slide p {
-  margin: 0 0 5px 185px;
-  line-height: 217%;
-}
-#reviews .reviews_slider .slick-slide p .nikname {
-  padding-left: 30px;
-  background: url(images/name_icon.png) left center no-repeat;
-  margin-right: 20px;
-}
-#reviews .reviews_slider .slick-slide p time {
-  padding-left: 30px;
-  background: url(images/time_icon.png) left center no-repeat;
-  margin-right: 30px;
-  white-space: nowrap;
-}
-#reviews .reviews_slider .slick-slide span + p {
-  margin-top: 7px;
-  line-height: 213%;
-}
 #reviews .reviews_slider .slick-prev {
   left: 0%;
   background-position: 0 -12px;
@@ -1207,6 +1175,40 @@ footer #social a:hover {
   left: 0;
   margin-left: 310px;
   margin-right: 0;
+}
+#reviews .avatar {
+  width: 146px;
+  height: 146px;
+  border-radius: 80px;
+  overflow: hidden;
+  float: left;
+  line-height: 146px;
+  text-align: center;
+}
+#reviews .avatar img {
+  vertical-align: middle;
+  min-width: 100%;
+}
+#reviews p {
+  margin: 0 0 5px 185px;
+  line-height: 217%;
+}
+#reviews p .nikname {
+  padding-left: 30px;
+  background: url(images/name_icon.png) left center no-repeat;
+  margin-right: 20px;
+}
+#reviews p time {
+  padding-left: 30px;
+  background: url(images/time_icon.png) left center no-repeat;
+  margin-right: 30px;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+#reviews span + p {
+  margin-top: 7px;
+  line-height: 213%;
 }
 
 #stages {
@@ -1340,6 +1342,30 @@ footer #social a:hover {
 
 #index #reviews > div {
   max-width: 772px;
+}
+
+.fancybox-enabled body {
+  overflow: auto;
+}
+.fancybox-enabled body .fancybox-controls--canGrab .fancybox-placeholder {
+  max-width: 1000px;
+}
+.fancybox-enabled body .fancybox-button--left, .fancybox-enabled body .fancybox-button--right {
+  position: fixed;
+  margin-top: -24px;
+  top: 50%;
+  left: 50px;
+  width: 26px;
+  height: 48px;
+  background: url(images/arr_left.png) 50% center no-repeat;
+}
+.fancybox-enabled body .fancybox-button--left:after, .fancybox-enabled body .fancybox-button--right:after {
+  display: none;
+}
+.fancybox-enabled body .fancybox-button--right {
+  right: 50px;
+  left: auto;
+  background: url(images/arr_right.png) 50% center no-repeat;
 }
 
 .bread_crumbs {
@@ -1592,12 +1618,52 @@ footer #social a:hover {
 #contacts .content .cont a:hover {
   text-decoration: underline;
 }
+#contacts .content a.button {
+  background-color: #14172a;
+  font-size: 16px;
+  width: 190px;
+}
+#contacts .content a.button:hover {
+  background-color: #56575c;
+}
 #contacts .content .cont + .cont {
   background-image: url(images/cont_icon_letter.png);
 }
 #contacts .content .cont + .cont + .cont {
   margin-right: 0px;
   background-image: url(images/cont_icon_address.png);
+}
+
+#reviews.no_bg {
+  background: none;
+  padding: 0px 20px 30px;
+}
+#reviews.no_bg div.reviews_items {
+  background: none;
+  max-width: 1300px;
+  padding: 0;
+  text-align: center;
+}
+#reviews.no_bg div.reviews_items > div {
+  background-color: #f8f8fa;
+  color: #14172a;
+  padding: 30px 30px 0;
+  width: 42%;
+  text-align: left;
+  float: left;
+}
+#reviews.no_bg div.reviews_items > div:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#reviews.no_bg div.reviews_items > div:nth-child(2n) {
+  margin: 0 0 50px 52.56522%;
+  float: none;
+}
+#reviews.no_bg div.reviews_items > p {
+  text-align: center;
+  margin-left: 0;
 }
 
 @media screen and (max-width: 1600px) {
@@ -1834,11 +1900,11 @@ footer #social a:hover {
   }
 
   #contacts .map iframe {
-    height: 460px;
+    height: 490px;
   }
   #contacts .content .text {
     background-size: auto 100%;
-    min-height: 410px;
+    min-height: 440px;
   }
   #contacts .content h1 {
     margin-top: 0;
@@ -2102,7 +2168,7 @@ footer #social a:hover {
   }
 
   #contacts .map iframe {
-    height: 410px;
+    height: 460px;
   }
   #contacts .content {
     margin-top: 95px;
@@ -2110,7 +2176,7 @@ footer #social a:hover {
   #contacts .content .text {
     background-size: auto 100%;
     background-position: center lrft;
-    min-height: 360px;
+    min-height: 410px;
   }
   #contacts .content h1 {
     margin-top: 0;
@@ -2118,6 +2184,17 @@ footer #social a:hover {
   #contacts .content .cont {
     font-size: 1.08em;
     line-height: 145%;
+  }
+
+  #reviews.no_bg div.reviews_items > div {
+    width: auto;
+    text-align: left;
+    float: none;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+  }
+  #reviews.no_bg div.reviews_items > div:nth-child(2n) {
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 590px) {
@@ -2271,20 +2348,20 @@ footer #social a:hover {
     padding: 30px;
     max-width: 330px;
   }
-  #reviews .reviews_slider .slick-slide .avatar {
-    float: none;
-    display: block;
-    margin: 0 auto 20px;
-  }
-  #reviews .reviews_slider .slick-slide p {
-    margin-left: 0px;
-  }
   #reviews .reviews_slider .slick-next {
     right: 0;
     left: auto;
     margin-left: 0;
   }
   #reviews .reviews_slider .slick-prev {
+    margin-left: 0px;
+  }
+  #reviews .avatar {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  #reviews p {
     margin-left: 0px;
   }
 
@@ -2537,20 +2614,20 @@ footer #social a:hover {
     padding: 20px;
     max-width: 230px;
   }
-  #reviews .reviews_slider .slick-slide .avatar {
-    float: none;
-    display: block;
-    margin: 0 auto 20px;
-  }
-  #reviews .reviews_slider .slick-slide p {
-    margin-left: 0px;
-  }
   #reviews .reviews_slider .slick-next {
     right: 0;
     left: auto;
     margin-left: 0;
   }
   #reviews .reviews_slider .slick-prev {
+    margin-left: 0px;
+  }
+  #reviews .avatar {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  #reviews p {
     margin-left: 0px;
   }
 
