@@ -861,6 +861,7 @@ footer #social a:hover {
   background: #1ecad1 url(images/arrow.png) 98.7% center no-repeat;
   background-size: auto 90%;
   line-height: 145%;
+  white-space: normal;
 }
 #index #services .service a:hover span {
   background-color: #14172a;
