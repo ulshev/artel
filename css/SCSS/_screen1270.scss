@@ -164,6 +164,7 @@
                 span {
                     padding: 0 0 0 110px;
                     line-height: 224px;
+                    margin-bottom: 20px;
                 }
             }
         }
@@ -178,6 +179,9 @@
                 a {
                     strong {
                         font-size: 20px;
+                    }
+                    span {
+                        max-height: 115px;
                     }
                 }
             }

@@ -59,6 +59,11 @@
 	line-height: 145%;
     }
     
+    .content h1 {
+	font-size: 1.84em;
+	line-height: 145%;
+    }
+    
     a.button {
 	font-size: 14px;
 	height: 26px;
@@ -303,10 +308,9 @@
 			font-size: 20px;
 		    }
 		    span {
-			padding-bottom: 20px;
 			padding-top: 0;
 			display: none;
-			max-height: 80px;
+			max-height: 70px;
 		    }
 		    
 		    &:hover span {

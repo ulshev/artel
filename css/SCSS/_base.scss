@@ -48,6 +48,13 @@ $max-width: 1634px;
     }
 }
 
+@mixin transition($property) {
+	-webkit-transition: $property 0.3s ease-out 0s;
+	-moz-transition: $property 0.3s ease-out 0s;
+	-o-transition: $property 0.3s ease-out 0s;
+	transition: $property 0.3s ease-out 0s;
+}
+
 
 body {   
     font-family: $font_family_os;

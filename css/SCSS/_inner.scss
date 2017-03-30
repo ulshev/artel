@@ -104,24 +104,37 @@
                 vertical-align: middle;
                 width: 20%;
                 padding: 0 0 0 130px;
-                background-color: #14172a;
                 white-space: nowrap;
                 line-height: 274px;
                 vertical-align: middle;
+                background-position: left center;
+                background-repeat: no-repeat;
+                background-color: #14172a;
+                @include transition(background-color);
+                
             }
             
-            &:hover span {
-                background: rgba(30,202,209, 0.8) url(images/arrow.png) left center no-repeat;
+            &:hover {
+                span {
+                    background-image: url(images/arrow.png);    
+                background-color: rgba(30,202,209, 0.8);
+                }
+                
             }
         }
         &.service_more {
             position: relative;
             overflow: hidden;
             
+            a {
+                background-color: rgba(20,23,42,0.8);
+                height: 100%;
+                @include transition(background-color);
+            }
+            
             strong {
                 text-transform: uppercase;
                 padding: 20px 20px 0;
-                background-color: rgba(20,23,42,0.8);
                 display: block;
                 font-size: 24px;
             }
@@ -129,16 +142,17 @@
                 font-size: 16px;
                 padding: 20px 20px 0;
                 width: auto;
-                background-color: rgba(20,23,42,0.8);
                 line-height: 140%;
                 white-space: normal;
                 text-transform: none;
                 font-weight: 300;
+                background: none;
             }
             
             a:hover {
+                background: rgba(30,202,209, 0.8);
                 strong, span {
-                    background: rgba(30,202,209, 0.8);
+                    background: none;
                 }
             }
             
@@ -172,15 +186,18 @@
                 bottom: 0;
                 height: auto;
                 
+                @include transition(display);
+                
                 strong {
                     padding-top: 275px;
                     padding-bottom: 20px;
                 }
                 span {
-                    padding-bottom: 20px;
                     padding-top: 0;
                     display: none;
-                    max-height: 140px;
+                    max-height: 120px;
+                    overflow: hidden;
+                    margin-bottom: 20px;
                 }
                 
                 &:hover span {

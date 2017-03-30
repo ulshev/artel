@@ -1491,22 +1491,36 @@ footer #social a:hover {
   vertical-align: middle;
   width: 20%;
   padding: 0 0 0 130px;
-  background-color: #14172a;
   white-space: nowrap;
   line-height: 274px;
   vertical-align: middle;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-color: #14172a;
+  -webkit-transition: background-color 0.3s ease-out 0s;
+  -moz-transition: background-color 0.3s ease-out 0s;
+  -o-transition: background-color 0.3s ease-out 0s;
+  transition: background-color 0.3s ease-out 0s;
 }
 #services .service a:hover span {
-  background: rgba(30, 202, 209, 0.8) url(images/arrow.png) left center no-repeat;
+  background-image: url(images/arrow.png);
+  background-color: rgba(30, 202, 209, 0.8);
 }
 #services .service.service_more {
   position: relative;
   overflow: hidden;
 }
+#services .service.service_more a {
+  background-color: rgba(20, 23, 42, 0.8);
+  height: 100%;
+  -webkit-transition: background-color 0.3s ease-out 0s;
+  -moz-transition: background-color 0.3s ease-out 0s;
+  -o-transition: background-color 0.3s ease-out 0s;
+  transition: background-color 0.3s ease-out 0s;
+}
 #services .service.service_more strong {
   text-transform: uppercase;
   padding: 20px 20px 0;
-  background-color: rgba(20, 23, 42, 0.8);
   display: block;
   font-size: 24px;
 }
@@ -1514,14 +1528,17 @@ footer #social a:hover {
   font-size: 16px;
   padding: 20px 20px 0;
   width: auto;
-  background-color: rgba(20, 23, 42, 0.8);
   line-height: 140%;
   white-space: normal;
   text-transform: none;
   font-weight: 300;
+  background: none;
+}
+#services .service.service_more a:hover {
+  background: rgba(30, 202, 209, 0.8);
 }
 #services .service.service_more a:hover strong, #services .service.service_more a:hover span {
-  background: rgba(30, 202, 209, 0.8);
+  background: none;
 }
 #services .service + .service {
   background-image: url(images/foto2.jpg);
@@ -1544,16 +1561,21 @@ footer #social a:hover {
   position: absolute;
   bottom: 0;
   height: auto;
+  -webkit-transition: display 0.3s ease-out 0s;
+  -moz-transition: display 0.3s ease-out 0s;
+  -o-transition: display 0.3s ease-out 0s;
+  transition: display 0.3s ease-out 0s;
 }
 .content #services > div .service a strong {
   padding-top: 275px;
   padding-bottom: 20px;
 }
 .content #services > div .service a span {
-  padding-bottom: 20px;
   padding-top: 0;
   display: none;
-  max-height: 140px;
+  max-height: 120px;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 .content #services > div .service a:hover span {
   display: block;
@@ -1893,6 +1915,7 @@ footer #social a:hover {
   #services .service a span {
     padding: 0 0 0 110px;
     line-height: 224px;
+    margin-bottom: 20px;
   }
 
   .content #services > div .service {
@@ -1900,6 +1923,9 @@ footer #social a:hover {
   }
   .content #services > div .service a strong {
     font-size: 20px;
+  }
+  .content #services > div .service a span {
+    max-height: 115px;
   }
 
   #contacts .map iframe {
@@ -1964,8 +1990,8 @@ footer #social a:hover {
     display: inline-block;
     padding: 15px 0;
   }
-  #header nav ul li.active > a {
-    color: #14172a;
+  #header nav ul li.active > a, #header nav a:hover {
+    color: #1ecad1;
     text-decoration: underline;
   }
   #header nav ul li:before {
@@ -1981,10 +2007,8 @@ footer #social a:hover {
     margin-top: -25px;
     margin-left: 220px;
   }
-  footer > div .foo_main_menu li {
-    display: none;
-  }
   footer > div .foo_menu {
+    display: none;
     float: none;
     width: auto;
     margin-left: 220px;
@@ -2152,6 +2176,9 @@ footer #social a:hover {
     line-height: 274px;
   }
 
+  .content #services > div {
+    padding-top: 20px;
+  }
   .content #services > div .service {
     height: 224px;
     width: 31.9%;
@@ -2161,10 +2188,9 @@ footer #social a:hover {
     line-height: 145%;
   }
   .content #services > div .service a span {
-    padding-bottom: 20px;
     padding-top: 0;
     display: none;
-    max-height: 140px;
+    max-height: 115px;
   }
   .content #services > div .service a:hover span {
     display: block;
@@ -2174,7 +2200,7 @@ footer #social a:hover {
     height: 460px;
   }
   #contacts .content {
-    margin-top: 95px;
+    margin-top: 93px;
   }
   #contacts .content .text {
     background-size: auto 100%;
@@ -2251,6 +2277,11 @@ footer #social a:hover {
   }
 
   .main_section h2 {
+    font-size: 1.84em;
+    line-height: 145%;
+  }
+
+  .content h1 {
     font-size: 1.84em;
     line-height: 145%;
   }
@@ -2434,10 +2465,9 @@ footer #social a:hover {
     font-size: 20px;
   }
   .content #services > div .service a span {
-    padding-bottom: 20px;
     padding-top: 0;
     display: none;
-    max-height: 80px;
+    max-height: 70px;
   }
   .content #services > div .service a:hover span {
     display: block;
@@ -2507,6 +2537,11 @@ footer #social a:hover {
   footer > div #foo_logo {
     float: none;
     margin: 0 auto 20px;
+  }
+
+  .content h1 {
+    font-size: 1.5em;
+    line-height: 145%;
   }
 
   #main_slider {
@@ -2727,6 +2762,10 @@ footer #social a:hover {
     font-size: 13px;
     line-height: 145%;
     padding: 15px 20px 20px;
+  }
+
+  .content #services > div .service a span {
+    padding-bottom: 0;
   }
 }
 

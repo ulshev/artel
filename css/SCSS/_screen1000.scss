@@ -53,8 +53,8 @@
 		    padding: 15px 0;
 		}
             }
-	    ul li.active>a {
-		color: #14172a;
+	    ul li.active>a, a:hover {
+		color: $color_a;
 		text-decoration: underline;
 	    }
             ul li:before {
@@ -74,11 +74,12 @@
 	    margin-top: -25px;
 	    margin-left: 220px;
             li {
-                display: none;
+                
             }
         }
 	
 	.foo_menu {
+	    display: none;
 	    float: none;
 	    width: auto;
 	    margin-left: 220px;
@@ -295,6 +296,7 @@
     
     .content #services {
 	>div{
+	    padding-top: 20px;
 	    .service {
 		height: 224px;
 		width: 31.9%;
@@ -306,10 +308,9 @@
 			line-height: 145%;
 		    }
 		    span {
-			padding-bottom: 20px;
 			padding-top: 0;
 			display: none;
-			max-height: 140px;
+			max-height: 115px;
 		    }
 		    
 		    &:hover span {
@@ -327,7 +328,7 @@
             }
         }
         .content {
-	    margin-top: 95px;
+	    margin-top: 93px;
             
             .text {
                 background-size: auto 100%;

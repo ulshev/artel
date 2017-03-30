@@ -32,6 +32,11 @@
 	}
     }
     
+    .content h1 {
+	font-size: 1.5em;
+	line-height: 145%;
+    }
+    
     #main_slider {
 	margin-top: 70px;
 	
@@ -313,4 +318,18 @@
         }
         
     }
+    
+    .content #services {
+	>div{
+	    .service {
+		a {
+		    span {
+			padding-bottom: 0;
+		    }
+		    
+		}
+	    }
+	}
+    }
+
 }
