@@ -73,35 +73,12 @@
             margin-bottom: 74px;
         }
         
-        @keyframes flicker_animation {
-            from {
-              width: 201px;
-              top: -35px;
-              left: 65px;
-            }
-            to {
-              width: 150px;
-              top: -4px;
-              left: 85px;
-            }
-        }
-        @-webkit-keyframes flicker_animation {
-            from {
-              width: 201px;
-              top: -35px;
-              left: 65px;
-            }
-            to {
-              width: 150px;
-              top: -4px;
-              left: 89px;
-            }
-        }
+        
         .flicker {
             width: 201px;
             height: 201px;
-            top: -45px;
-            left: 46px;
+            top: -21px;
+            left: 71px;
         }
         
         .slick-slider {
@@ -117,17 +94,19 @@
     
      #gallery {
         &>div {
-            padding: 47px 20px 20px;
+            padding: 0px 20px 20px;
         }
         .gallery {
-            div {
+            .gallery_fotos div {
                 width: 356/1634*100%;
             }
         }
     }
+    #index #gallery > div {
+        padding-top: 47px;
+    }
     
-    
-    #services {
+    #index #services {
         &>div {
             padding: 34px 20px 35px;
         }
@@ -160,4 +139,70 @@
             margin: 0 70/1634*100% 55px;
         }
     }
+    
+    
+    .content {
+        
+        .text {
+            
+            .left {
+                margin: 10px 30px 25px 0;
+            }
+        }
+    }
+    
+    #services {
+        
+        .service {
+            height: 224px;
+            width: 49.2%;
+            
+            a {
+                font-size: 1.31em;
+                line-height: 145%;
+                
+                span {
+                    padding: 0 0 0 110px;
+                    line-height: 224px;
+                }
+            }
+        }
+        
+    }
+    
+    .content #services {
+        >div{
+            .service {
+                width: 32.5%;
+                
+                a {
+                    strong {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    
+    #contacts {
+        .map {
+            iframe {
+                height: 460px;
+            }
+        }
+        .content {
+            
+            .text {
+                background-size: auto 100%;
+                min-height: 410px;
+            }
+            
+            h1 {
+                margin-top: 0;
+            }
+        }
+    }
+    
+    
+    
 }

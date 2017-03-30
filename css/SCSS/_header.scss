@@ -29,6 +29,10 @@
         img {
             width: 100%;
         }
+        
+        a:hover {
+            opacity: 0.8;
+        }
     }
     
     #headr_cont  {
@@ -41,6 +45,10 @@
         a {
             color: #121a2d;
             text-decoration: none;
+            
+            &:hover {
+                opacity: 0.6;
+            }
         }
     }
     
@@ -81,7 +89,7 @@
     
 }
 
-#index #header {
+#index #header, #contacts #header {
     background-color: #fff;
     
     &:before {
@@ -92,5 +100,11 @@
         top: 0;
         left: 0;
         background-color: $color_a;
+    }
+}
+
+#contacts #header {
+    nav ul li.active a {
+        color: $color_a;
     }
 }

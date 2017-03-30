@@ -83,7 +83,7 @@
 	
     }
     
-    #services {
+    #index #services {
         .service {
 	    width: 100%;
 	    a {
@@ -142,9 +142,6 @@
     }
     
     #gallery {
-        &>div {
-            padding: 47px 20px 20px;
-        }
         .gallery {
 	    p{
 		a{
@@ -154,7 +151,7 @@
 		    margin-bottom: 30px;
 		}
 	    }
-            div {
+            .gallery_fotos div {
                 width: 90%;
             }
         }
@@ -165,7 +162,8 @@
 	padding: 60px 20px;
 	
 	&>div {
-	    padding: 30px;
+	    padding: 20px;
+	    max-width: 230px;
 	}
 	
 	.reviews_slider  {
@@ -248,7 +246,7 @@
     }
     
     #stages>div {
-        padding: 49px 20px 5px;
+        padding: 25px 20px 5px;
         
         li {
             width: 80%;
@@ -261,5 +259,57 @@
 		margin-right: auto;
 	    }
         }
+    }
+    
+    .content {
+	
+	.text {
+	    
+	    .left {
+		float: left;
+		margin: 10px 0px 0px 0;
+		width: 100%;
+	    }
+	}
+    }
+
+    .bread_crumbs {
+	margin-top: 70px;
+    }
+    
+    #services {
+        
+        .service {
+            height: 124px;
+            
+            a {
+                font-size: 0.91em;
+                line-height: 145%;
+                
+                span {
+                    padding: 0 0 0 50px;
+                    line-height: 124px;
+                }
+		&:hover span {
+		    background-size: auto 30%;
+		}
+            }
+	    
+	    &.service_more {
+		height: auto;
+		
+		strong {
+		    font-size: 18px;
+		    line-height: 145%;
+		}
+		span {
+		    font-size: 13px;
+		    line-height: 145%;
+		    padding: 15px 20px 20px;
+		}
+		
+	    }
+        }
+        
     }
 }

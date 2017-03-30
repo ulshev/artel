@@ -115,7 +115,7 @@
 	
     }
     
-    #services {
+    #index #services {
         .service {
 	    width: 45.3%;
 	    a {
@@ -163,9 +163,6 @@
     }
     
     #gallery {
-        &>div {
-            padding: 47px 20px 20px;
-        }
         .gallery {
 	    p{
 		a{
@@ -173,8 +170,8 @@
 		}
 		
 	    }
-            div {
-                width: 44.2%;
+            .gallery_fotos div {
+                width: 43.5%;
             }
         }
     }
@@ -185,6 +182,7 @@
 	
 	&>div {
 	    padding: 30px;
+	    max-width: 330px
 	}
 	
 	.reviews_slider  {
@@ -257,6 +255,112 @@
         li {
             width: 47.5%;
             margin: 0 1% 55px;
+        }
+    }
+    
+    .bread_crumbs {
+	margin-top: 80px;
+    }
+    .content {
+	
+	h1 {
+	    font-size: 1.84em;
+	    line-height: 145%;
+	}
+	
+    }
+    
+    #services {
+        
+        .service {
+            height: 224px;
+            
+            a {
+                font-size: 1.21em;
+                line-height: 145%;
+                
+                span {
+                    padding: 0 0 0 110px;
+                    line-height: 224px;
+                }
+            }
+        }
+        
+    }
+    
+    .content #services {
+	>div{
+	    .service {
+		height: 174px;
+		width: 100%;
+		margin: 0 0 8px;
+		
+		a {
+		    
+		    strong {
+			font-size: 20px;
+		    }
+		    span {
+			padding-bottom: 20px;
+			padding-top: 0;
+			display: none;
+			max-height: 80px;
+		    }
+		    
+		    &:hover span {
+			display: block;
+		    }
+		}
+	    }
+	}
+    }
+    
+    #contacts {
+        .map {
+	    margin-left: 0;
+            iframe {
+                height: 210px;
+            }
+        }
+        .content {
+	    margin-top: 95px;
+	    
+	    &:before {
+		width: 100%
+	    }
+            
+            .text {
+                background: none;
+                min-height: 1px;
+		padding-bottom: 30px;
+		padding-top: 30px;
+		float: none;
+		width: auto;
+            }
+            
+            h1 {
+                margin-top: 0;
+		margin-bottom: 30px;
+            }
+	    
+	    .cont {
+		font-size: 1.08em;
+		line-height: 145%;
+	    }
+        }
+    }
+}
+
+@media screen and (max-width: 510px) {
+    #index #gallery {
+        .gallery {
+	    .gallery_fotos {
+                padding-bottom: 40px
+            }
+            .gallery_fotos div {
+                width: 90%;
+		margin: 0;
+            }
         }
     }
 }

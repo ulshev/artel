@@ -1,10 +1,27 @@
 function tweakSlider() {
 	var width = $(window).width();
-		if (width < 1000) {
-			$('.main_menu').css("display", "none");
-		}else{
-			$('.main_menu').attr('style', '');
-		}
+	if (width < 1000) {
+		$('.main_menu').css("display", "none");
+	}else{
+		$('.main_menu').attr('style', '');
+	}
+	
+	if (width < 500) {
+		$('#index .gallery_fotos').slick({
+			dots: false,
+			arrows: true,
+			infinite: true,
+			speed: 1500,
+			//autoplay: true,
+			//autoplaySpeed: 1500,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			fade: true,
+			adaptiveHeight: true
+		});
+	}else{
+		
+	}
 }
 
 $(document).ready(function() {
@@ -17,6 +34,10 @@ $(document).ready(function() {
 		}else{
 		   $('.main_menu').slideDown(500);
 		}
+	});
+	$('.show_more').focus(function(){
+		$('.show_more a span').slideDown(500);
+
 	});
 	 
 	$(window).resize(function(){
@@ -141,12 +162,28 @@ $(document).ready(function() {
 		//auto:true,
 	});*/
 
-    $('input,textarea').focus(function(){
-	$(this).data('placeholder',$(this).attr('placeholder'))
-	$(this).attr('placeholder','');
-    });
-    $('input,textarea').blur(function(){
-	$(this).attr('placeholder',$(this).data('placeholder'));
-    });
+	$('input,textarea').focus(function(){
+	    $(this).data('placeholder',$(this).attr('placeholder'))
+	    $(this).attr('placeholder','');
+	});
+	$('input,textarea').blur(function(){
+	    $(this).attr('placeholder',$(this).data('placeholder'));
+	});
+	
+	if($('.show_hide').showHide){
+		$('.show_hide').showHide({
+	
+		    speed: 200,  // speed you want the toggle to happen
+	
+		    easing: '',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
+	
+		    changeText: 1, // if you dont want the button text to change, set this to 0
+	
+		    showText: 'Подробнее',// the button text to show when a div is closed
+	
+		    hideText: 'Свернуть' // the button text to show when a div is open
+	
+		});
+	}
 
 });

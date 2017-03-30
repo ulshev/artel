@@ -84,16 +84,19 @@
     #gallery {
     
         &>div {
-            padding: 67px 20px 35px;
+            padding: 0px 20px 35px;
         }
         .gallery {
-            div {
+            .gallery_fotos div {
                 width: 370/1634*100%;
             }
         }
     }
+    #index #gallery > div {
+        padding-top: 67px;
+    }
     
-    #services {
+    #index #services {
         &>div {
             padding: 44px 20px 45px;
         }
@@ -121,5 +124,23 @@
             margin: 0 100/1634*100% 55px;
         }
     }
+
+
+    #contacts {
+        .map {
+            iframe {
+                height: 560px;
+            }
+        }
+        .content {
+            
+            .text {
+                background-size: auto 100%;
+                min-height: 510px;
+            }
+        }
+    }
+
     
 }
+

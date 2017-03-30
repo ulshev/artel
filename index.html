@@ -7,19 +7,16 @@
 	<!--[if lt IE 9]><script src="js/html5.js" type="text/javascript"></script><![endif]-->
 	
 	<script type="Text/Javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
-	<script type="text/javascript" src="js/jquery.sudoSlider.min.js"></script>
 	<script src="js/script.js" type="text/javascript"></script> 
 	
 	<title>Артель - Инженерно-монтажные и отделочные работы</title>
-	<link rel="stylesheet" type="text/css"  media="all" href="css/jquery.fancybox.min.css" />
+	<link rel="stylesheet" type="text/css"  media="all" href="css/jquery.fancybox.css" />
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
-	<!--link rel="stylesheet" type="text/css" href="css/slick-theme.css"/-->
 	<link rel="stylesheet" type="text/css"  media="all" href="css/font.css" />
-	<link rel="stylesheet" type="text/css"  media="all" href="css/style.css" />
-	<link rel="stylesheet" type="text/css"  media="all" href="css/screen.css" />
+	<link rel="stylesheet" type="text/css"  media="all" href="template_styles.css" />
 </head>
 <body id="index"> <!-- Важно!!! на главной странице добавлять в тег body id="index", а во всех остальных его убирать -->
 <div id="wrapper">
@@ -28,15 +25,15 @@
 	    <div>
 		
 		<div id="logo">
-			<a href="#" title="Главная"><img src="images/logo.png" alt="Артель - Инженерно-монтажные и отделочные работы" /></a>
+			<img src="images/logo.png" alt="Артель - Инженерно-монтажные и отделочные работы" />
 		</div>
 		<div id="headr_cont">
 			<a href="tel:+79269323333">+7 (926) 932 33 33</a>
 		</div>
 		<nav>
 			<ul class="main_menu">
-				<li><a href="#" title="Главная страница">Главная</a></li>                  
-				<li><a href="production.html" title="Услуги">Услуги</a></li>             
+				<li class="active"><a href="#" title="Главная страница">Главная</a></li>                  
+				<li><a href="services.html" title="Услуги">Услуги</a></li>            
 				<li><a href="portfolio.html" title="Портфолио">Портфолио</a></li>
 				<li><a href="about.html" title="О компании">О компании</a></li>
 				<li><a href="catalog_main.html" title="Скидки">Скидки</a></li>
@@ -49,7 +46,7 @@
 	<!-- end шапка -->
 	
 	
-	<section class="main_section" id="main_slider">
+	<div class="main_section" id="main_slider">
 		<div>
 			<div class="slider">
 			    
@@ -67,9 +64,9 @@
 			    </div>
 			</div>
 		</div>
-	</section>
+	</div>
 	
-	<section class="main_section" id="advantages">
+	<div class="main_section" id="advantages">
 		<div>
 			<h2>Наши <span>преимущества</span></h2>
 			<div class="karusel_advantages">
@@ -96,10 +93,10 @@
 				
 			</div>
 		</div>
-	</section>
+	</div>
 	
 	<!-- Услуги -->
-	<section class="main_section" id="services">
+	<div class="main_section" id="services">
 		<div>
 			<h2>Наши <span>Услуги</span></h2>
 			
@@ -110,7 +107,7 @@
 			</div>
 			<div class="service">
 			    <a href="#">
-				<span>ремонт <br>загородных домов</span>	
+				<span>ремонт загородных&nbsp;домов</span>	
 			    </a>
 			</div>
 			<div class="service">
@@ -120,15 +117,15 @@
 			</div>
 			<div class="service">
 			    <a href="#">
-				<span>отдельные <br>виды работ</span>	
+				<span>отдельные виды&nbsp;работ</span>	
 			    </a>
 			</div>
 		</div>
-	</section>
+	</div>
 	
 	
 	<!-- Акции -->
-	<section class="main_section" id="action">
+	<div class="main_section" id="action">
 		<div>
 			<h2>Акции</h2>
 			<span class="flicker"></span>
@@ -154,11 +151,11 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 	
 	
 	<!-- Галерея -->
-	<section class="main_section" id="gallery">
+	<div class="main_section" id="gallery">
 		<div>
 			<h2>Фотографии <span>Объектов</span></h2>
 			<div class="gallery">
@@ -168,6 +165,8 @@
 					<a href="#">Ремонт офисов</a>
 					<a href="#">Ремонт загородных домов</a>
 				</p>
+			    <div class="gallery_fotos">
+			    
 				<div>
 					<a data-fancybox="gallery" href="images/foto5.jpg"><img src="images/foto5.jpg" alt=""></a>
 				</div>
@@ -193,14 +192,16 @@
 					<a data-fancybox="gallery" href="images/foto8.jpg"><img src="images/foto8.jpg" alt=""></a>
 				</div>
 				
+			    </div>
+				
 				<p><a class="button" href="portfolio.html">Подробнее</a></p>
 			</div>
 			
 			
 		</div>
-	</section>
+	</div>
 	
-	<section class="main_section" id="partners">
+	<div class="main_section" id="partners">
 		<div>
 			<h2><span>Наши</span> Партнеры</h2>
 			<div class="karusel_partners">
@@ -273,9 +274,9 @@
 			</div>
 			<p><a href="#">Все партнеры</a></p>
 		</div>
-	</section>
+	</div>
 	
-	<section class="main_section" id="reviews">
+	<div class="main_section" id="reviews">
 		<div>
 			<h2>Отзывы <span>клиентов</span></h2>
 			
@@ -307,9 +308,9 @@
 			</div>
 			
 		</div>
-	</section>
+	</div>
 	
-	<section class="main_section" id="stages">
+	<div class="main_section" id="stages">
 	    <div>
 		<h2>Этапы <span>работы</span></h2>
 		<ul>
@@ -321,9 +322,9 @@
 			<li>Сдача объекта</li>
 		</ul>
 	    </div>
-	</section>
+	</div>
 	
-	<section class="main_section" id="main_form">
+	<div class="main_section" id="main_form">
 	     <div>
 		<h2>СВЯЖИТЕСЬ С НАМИ ИЛИ <span>ОСТАВЬТЕ&nbsp;ЗАЯВКУ</span></h2>
 		<p class="cont"><a href="tel:+79269323333">+7 (926) 932 33 33</a></p>
@@ -337,7 +338,7 @@
 		</form>
 	     
 	     </div>
-	</section>
+	</div>
 	
 	
 	
@@ -351,16 +352,18 @@
 			</div>
 			<p id="copy">&copy; 2016 Copyright “Артель”</p>
 			<div id="social">
-				<a title="ВКонтакте" href="#"><img src="images/vk.png" alt="VK" /></a>
-				<a title="FaceBook" href="#"><img src="images/fb.png" alt="FB" /></a>
-				<a title="Tweeter" href="#"><img src="images/tw.png" alt="TW" /></a>
+			    <!--noindex-->
+				<a rel="nofollow" title="ВКонтакте" href="#"><img src="images/vk.png" alt="VK" /></a>
+				<a rel="nofollow" title="FaceBook" href="#"><img src="images/fb.png" alt="FB" /></a>
+				<a rel="nofollow" title="Tweeter" href="#"><img src="images/tw.png" alt="TW" /></a>
+			    <!--/noindex-->
 			</div>
 			
 		</div>
 		<nav class="foo_main_menu">
 			<ul>
-				<li><a href="#" title="Главная страница">Главная</a></li>
-				<li><a href="production.html" title="Услуги">Услуги</a></li>
+				<li class="active"><a href="#" title="Главная страница">Главная</a></li>
+				<li><a href="services.html" title="Услуги">Услуги</a></li>
 				<li><a href="portfolio.html" title="Портфолио">Портфолио</a></li>
 				<li><a href="about.html" title="О компании">О компании</a></li>
 				<li><a href="catalog_main.html" title="Скидки">Скидки</a></li>

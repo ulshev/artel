@@ -56,6 +56,10 @@ hr {
   border: 0;
 }
 
+*:focus {
+  outline: none;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -224,7 +228,7 @@ a.button:active {
   overflow: hidden;
   display: table;
   height: 100%;
-  /*background: url(../images/site.jpg) center bottom no-repeat;
+  /*background: url(images/site.jpg) center bottom no-repeat;
   background-size: auto;*/
 }
 
@@ -246,6 +250,7 @@ a.button:active {
   margin-right: 3.67197%;
   text-decoration: none;
   color: #14172a;
+  white-space: nowrap;
 }
 .gallery p a:hover {
   text-decoration: underline;
@@ -264,14 +269,31 @@ a.button:active {
 .gallery p:last-child {
   text-align: center;
 }
-.gallery div {
+.gallery .gallery_fotos div {
   display: inline-block;
   vertical-align: top;
   margin: 0 13px 30px;
   width: 23.13341%;
   overflow: hidden;
 }
-.gallery div img {
+.gallery .gallery_fotos div a {
+  display: block;
+  position: relative;
+}
+.gallery .gallery_fotos div a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(30, 202, 209, 0.8) url(images/eye.png) center center no-repeat;
+  display: none;
+}
+.gallery .gallery_fotos div a:hover:after {
+  display: block;
+}
+.gallery .gallery_fotos div img {
   width: 100%;
 }
 
@@ -308,7 +330,7 @@ a.button:active {
 }
 .slick-slider .slick-prev {
   left: 50%;
-  background: url(../images/arrow_left.png) 0 3px no-repeat;
+  background: url(images/arrow_left.png) 0 3px no-repeat;
   text-align: right;
   margin-left: -25%;
 }
@@ -317,7 +339,7 @@ a.button:active {
   width: 85px;
 }
 .slick-slider .slick-next {
-  background: url(../images/arrow_right.png) 100% 3px no-repeat;
+  background: url(images/arrow_right.png) 100% 3px no-repeat;
   text-align: left;
   right: 50%;
   margin-right: -25%;
@@ -394,6 +416,9 @@ a.button:active {
 #header #logo img {
   width: 100%;
 }
+#header #logo a:hover {
+  opacity: 0.8;
+}
 #header #headr_cont {
   margin: 21px 0px 21px 1.52999%;
   float: right;
@@ -404,6 +429,9 @@ a.button:active {
 #header #headr_cont a {
   color: #121a2d;
   text-decoration: none;
+}
+#header #headr_cont a:hover {
+  opacity: 0.6;
 }
 #header nav {
   margin: 30px;
@@ -438,10 +466,10 @@ a.button:active {
   text-decoration: underline;
 }
 
-#index #header {
+#index #header, #contacts #header {
   background-color: #fff;
 }
-#index #header:before {
+#index #header:before, #contacts #header:before {
   content: '';
   width: 50%;
   height: 100%;
@@ -449,6 +477,10 @@ a.button:active {
   top: 0;
   left: 0;
   background-color: #1ecad1;
+}
+
+#contacts #header nav ul li.active a {
+  color: #1ecad1;
 }
 
 /* Стили подвала */
@@ -466,6 +498,7 @@ footer {
   z-index: 2;
   display: table-row;
   padding: 1px 0;
+  position: relative;
 }
 footer > div {
   margin: 85px auto;
@@ -558,7 +591,7 @@ footer #social a:hover {
 }
 
 #main_slider {
-  /*background: url(../images/slider.jpg) center top no-repeat;*/
+  /*background: url(images/slider.jpg) center top no-repeat;*/
   border-bottom: 1px solid #f5f5f8;
   position: relative;
 }
@@ -585,7 +618,7 @@ footer #social a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background: #1ecad1 url(../images/slide_bg.png) right top no-repeat;
+  background: #1ecad1 url(images/slide_bg.png) right top no-repeat;
   background-size: 77.54% auto;
 }
 #main_slider .slider {
@@ -714,19 +747,19 @@ footer #social a:hover {
   margin-right: auto;
 }
 #advantages .karusel_advantages .slide1 {
-  background-image: url(../images/advantages_icon1.png);
+  background-image: url(images/advantages_icon1.png);
 }
 #advantages .karusel_advantages .slide2 {
-  background-image: url(../images/advantages_icon2.png);
+  background-image: url(images/advantages_icon2.png);
 }
 #advantages .karusel_advantages .slide3 {
-  background-image: url(../images/advantages_icon3.png);
+  background-image: url(images/advantages_icon3.png);
 }
 #advantages .karusel_advantages .slide4 {
-  background-image: url(../images/advantages_icon4.png);
+  background-image: url(images/advantages_icon4.png);
 }
 #advantages .karusel_advantages .slide5 {
-  background-image: url(../images/advantages_icon5.png);
+  background-image: url(images/advantages_icon5.png);
 }
 #advantages .karusel_advantages .slick-arrow {
   top: 50px;
@@ -742,33 +775,33 @@ footer #social a:hover {
 }
 #advantages .karusel_advantages .slick-prev {
   left: 15px;
-  background: url(../images/arr_left.png) 50% center no-repeat;
+  background: url(images/arr_left.png) 50% center no-repeat;
 }
 #advantages .karusel_advantages .slick-prev:hover {
-  background-image: url(../images/arr_left_hover.png);
+  background-image: url(images/arr_left_hover.png);
 }
 #advantages .karusel_advantages .slick-next {
   right: 15px;
-  background: url(../images/arr_right.png) 50% center no-repeat;
+  background: url(images/arr_right.png) 50% center no-repeat;
 }
 #advantages .karusel_advantages .slick-next:hover {
-  background-image: url(../images/arr_right_hover.png);
+  background-image: url(images/arr_right_hover.png);
 }
 
-#services {
+#index #services {
   background: #fff;
 }
-#services > div {
+#index #services > div {
   max-width: 1820px;
   margin: 0 auto;
   padding: 54px 20px 45px;
   text-align: center;
 }
-#services h2 {
+#index #services h2 {
   position: relative;
   margin-bottom: 62px;
 }
-#services h2:before {
+#index #services h2:before {
   content: "";
   display: block;
   position: absolute;
@@ -779,7 +812,7 @@ footer #social a:hover {
   height: 1px;
   background-color: #e4e4e4;
 }
-#services h2:after {
+#index #services h2:after {
   content: "";
   display: block;
   position: absolute;
@@ -792,7 +825,7 @@ footer #social a:hover {
   border: 1px solid #1ecad1;
   border-radius: 6px;
 }
-#services .service {
+#index #services .service {
   width: 24.3%;
   display: inline-block;
   vertical-align: top;
@@ -800,10 +833,10 @@ footer #social a:hover {
   text-align: left;
   box-shadow: 0 0 21px rgba(0, 0, 0, 0.19);
   margin: 0 3px 8px 2px;
-  background: url(../images/foto1.jpg) center center no-repeat;
+  background: url(images/foto1.jpg) center center no-repeat;
   background-size: cover;
 }
-#services .service a {
+#index #services .service a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -814,31 +847,31 @@ footer #social a:hover {
   width: 100%;
   height: 100%;
 }
-#services .service a:before {
+#index #services .service a:before {
   content: "";
   display: table-row;
   height: 100%;
 }
-#services .service a span {
+#index #services .service a span {
   display: table-cell;
   height: 90px;
   vertical-align: middle;
   width: 100%;
   padding: 5px 24.02402% 5px 6.00601%;
-  background: #1ecad1 url(../images/arrow.png) 98.7% center no-repeat;
+  background: #1ecad1 url(images/arrow.png) 98.7% center no-repeat;
   background-size: auto 90%;
 }
-#services .service a:hover span {
+#index #services .service a:hover span {
   background-color: #14172a;
 }
-#services .service + .service {
-  background-image: url(../images/foto2.jpg);
+#index #services .service + .service {
+  background-image: url(images/foto2.jpg);
 }
-#services .service + .service + .service {
-  background-image: url(../images/foto3.jpg);
+#index #services .service + .service + .service {
+  background-image: url(images/foto3.jpg);
 }
-#services .service + .service + .service + .service {
-  background-image: url(../images/foto4.jpg);
+#index #services .service + .service + .service + .service {
+  background-image: url(images/foto4.jpg);
 }
 
 #action {
@@ -868,34 +901,26 @@ footer #social a:hover {
   left: 49.4%;
   width: 143px;
   height: 49px;
-  background: url(../images/pointer.png) center top no-repeat;
+  background: url(images/pointer.png) center top no-repeat;
 }
 @keyframes flicker_animation {
-  from {
-    width: 251px;
-    top: -44px;
-    left: 46px;
+  0% {
+    transform: scale(1.1);
   }
-  to {
-    width: 200px;
-    top: -19px;
-    left: 71px;
+  100% {
+    transform: scale(0.9);
   }
 }
 @-webkit-keyframes flicker_animation {
-  from {
-    width: 251px;
-    top: -44px;
-    left: 46px;
+  0% {
+    -webkit-transform: scale(1.1);
   }
-  to {
-    width: 200px;
-    top: -19px;
-    left: 71px;
+  100% {
+    -webkit-transform: scale(0.9);
   }
 }
 #action .flicker {
-  background: url(../images/flicker.png) center top no-repeat;
+  background: url(images/flicker.png) center top no-repeat;
   background-size: 100%;
   position: absolute;
   width: 251px;
@@ -913,7 +938,7 @@ footer #social a:hover {
   height: 110.37736%;
   right: 0;
   top: -55px;
-  background: url(../images/action_img.png) left top no-repeat;
+  background: url(images/action_img.png) left top no-repeat;
   z-index: 1;
 }
 #action .action_img:after {
@@ -923,7 +948,7 @@ footer #social a:hover {
   bottom: 0;
   width: 88.42887%;
   height: 24px;
-  background: url(../images/shadow.png) left bottom no-repeat;
+  background: url(images/shadow.png) left bottom no-repeat;
 }
 #action .slick-slider {
   position: relative;
@@ -971,12 +996,12 @@ footer #social a:hover {
 }
 #action .slick-slider .slick-prev {
   left: auto;
-  background: url(../images/arrow_left2.png) center no-repeat;
+  background: url(images/arrow_left2.png) center no-repeat;
   margin-left: 0;
   right: 95px;
 }
 #action .slick-slider .slick-next {
-  background: url(../images/arrow_right2.png) 100% 3px no-repeat;
+  background: url(images/arrow_right2.png) 100% 3px no-repeat;
   right: 0;
   margin-right: 0;
 }
@@ -987,7 +1012,7 @@ footer #social a:hover {
 #gallery > div {
   max-width: 1634px;
   margin: 0 auto;
-  padding: 87px 20px 45px;
+  padding: 0px 20px 45px;
   text-align: center;
 }
 #gallery h2 {
@@ -1019,8 +1044,12 @@ footer #social a:hover {
   border-radius: 6px;
 }
 
+#index #gallery > div {
+  padding-top: 87px;
+}
+
 #partners {
-  /*background: #fefefe url(../images/partners.jpg) center top no-repeat;*/
+  /*background: #fefefe url(images/partners.jpg) center top no-repeat;*/
   border-top: 1px solid #f5f5f8;
   background: #e2e2e2;
   background: -moz-linear-gradient(top, #f8f8fa 0%, #ffffff 30%, #ffffff 31%, #ffffff 100%);
@@ -1095,7 +1124,7 @@ footer #social a:hover {
 }
 
 #reviews {
-  background: #fff url(../images/reviews.jpg) center top no-repeat;
+  background: #fff url(images/reviews.jpg) center top no-repeat;
   background-size: cover;
   padding: 110px 20px;
 }
@@ -1103,7 +1132,7 @@ footer #social a:hover {
   max-width: 772px;
   margin: 0 auto;
   padding: 45px 95px 50px 95px;
-  background: #121d2f url(../images/reviews_black.jpg) center bottom no-repeat;
+  background: #121d2f url(images/reviews_black.jpg) center bottom no-repeat;
   background-size: 100% auto;
   color: #fff;
   text-align: left;
@@ -1153,12 +1182,12 @@ footer #social a:hover {
 }
 #reviews .reviews_slider .slick-slide p .nikname {
   padding-left: 30px;
-  background: url(../images/name_icon.png) left center no-repeat;
+  background: url(images/name_icon.png) left center no-repeat;
   margin-right: 20px;
 }
 #reviews .reviews_slider .slick-slide p time {
   padding-left: 30px;
-  background: url(../images/time_icon.png) left center no-repeat;
+  background: url(images/time_icon.png) left center no-repeat;
   margin-right: 30px;
   white-space: nowrap;
 }
@@ -1241,26 +1270,26 @@ footer #social a:hover {
   font-size: 24px;
   display: block;
   margin-bottom: 16px;
-  background: url(../images/stages_icon1.png) left top no-repeat;
+  background: url(images/stages_icon1.png) left top no-repeat;
 }
 #stages li + li:before {
-  background-image: url(../images/stages_icon2.png);
+  background-image: url(images/stages_icon2.png);
 }
 #stages li + li + li:before {
-  background-image: url(../images/stages_icon3.png);
+  background-image: url(images/stages_icon3.png);
 }
 #stages li + li + li + li:before {
-  background-image: url(../images/stages_icon4.png);
+  background-image: url(images/stages_icon4.png);
 }
 #stages li + li + li + li + li:before {
-  background-image: url(../images/stages_icon5.png);
+  background-image: url(images/stages_icon5.png);
 }
 #stages li + li + li + li + li + li:before {
-  background-image: url(../images/stages_icon6.png);
+  background-image: url(images/stages_icon6.png);
 }
 
 #main_form {
-  background: url(../images/form_bg.jpg) center center no-repeat;
+  background: url(images/form_bg.jpg) center center no-repeat;
   background-size: cover;
 }
 #main_form > div {
@@ -1283,7 +1312,7 @@ footer #social a:hover {
   font-size: 1.28em;
   line-height: 130%;
   padding-left: 45px;
-  background: url(../images/cont_icon_call.png) left top no-repeat;
+  background: url(images/cont_icon_call.png) left top no-repeat;
   min-height: 28px;
 }
 #main_form .cont a {
@@ -1295,11 +1324,11 @@ footer #social a:hover {
   text-decoration: underline;
 }
 #main_form .cont + .cont {
-  background-image: url(../images/cont_icon_letter.png);
+  background-image: url(images/cont_icon_letter.png);
 }
 #main_form .cont + .cont + .cont {
   margin-right: 0px;
-  background-image: url(../images/cont_icon_address.png);
+  background-image: url(images/cont_icon_address.png);
 }
 #main_form form p {
   max-width: 795px;
@@ -1307,6 +1336,268 @@ footer #social a:hover {
   text-align: left;
   font-size: 0.86em;
   line-height: 145%;
+}
+
+#index #reviews > div {
+  max-width: 772px;
+}
+
+.bread_crumbs {
+  text-align: center;
+  padding: 30px 20px 20px;
+  font-size: 0.86em;
+}
+.bread_crumbs a {
+  text-decoration: none;
+  color: #14172a;
+}
+.bread_crumbs a:hover {
+  text-decoration: underline;
+}
+.bread_crumbs span {
+  color: #1ecad1;
+}
+
+.content {
+  max-width: 1288px;
+  padding: 0 20px 10px;
+  margin: 0 auto;
+}
+.content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.content h1 {
+  margin-bottom: 50px;
+}
+.content .text {
+  font-size: 1.14em;
+  line-height: 180%;
+}
+.content .text .left {
+  float: left;
+  max-width: 610px;
+  margin: 10px 60px 50px 0;
+  width: 45%;
+}
+.content .text ul {
+  display: inline-block;
+  margin-right: 6.98758%;
+  margin-bottom: 30px;
+}
+.content .text ul li:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  background-color: #1ecad1;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+#services {
+  position: relative;
+  z-index: 2;
+}
+#services > div {
+  max-width: 1634px;
+  margin: 0 auto;
+  padding: 0px 20px 45px;
+  text-align: center;
+}
+#services h2 {
+  position: relative;
+  margin-bottom: 62px;
+}
+#services h2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -105px;
+  width: 211px;
+  height: 1px;
+  background-color: #e4e4e4;
+}
+#services h2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -6px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 1px solid #1ecad1;
+  border-radius: 6px;
+}
+#services .service {
+  width: 49.3%;
+  display: inline-block;
+  vertical-align: top;
+  height: 274px;
+  text-align: left;
+  margin: 0 3px 8px 2px;
+  background: #14172a url(images/foto1.jpg) center center no-repeat;
+  background-size: cover;
+}
+#services .service a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.61em;
+  line-height: 145%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#services .service a span {
+  display: block;
+  height: 100%;
+  vertical-align: middle;
+  width: 20%;
+  padding: 0 0 0 130px;
+  background-color: #14172a;
+  white-space: nowrap;
+  line-height: 274px;
+  vertical-align: middle;
+}
+#services .service a:hover span {
+  background: rgba(30, 202, 209, 0.8) url(images/arrow.png) left center no-repeat;
+}
+#services .service.service_more {
+  position: relative;
+  overflow: hidden;
+}
+#services .service.service_more strong {
+  text-transform: uppercase;
+  padding: 20px 20px 0;
+  background-color: rgba(20, 23, 42, 0.8);
+  display: block;
+  font-size: 24px;
+}
+#services .service.service_more span {
+  font-size: 16px;
+  padding: 20px 20px 0;
+  width: auto;
+  background-color: rgba(20, 23, 42, 0.8);
+  line-height: 140%;
+  white-space: normal;
+  text-transform: none;
+  font-weight: 300;
+}
+#services .service.service_more a:hover strong, #services .service.service_more a:hover span {
+  background: rgba(30, 202, 209, 0.8);
+}
+#services .service + .service {
+  background-image: url(images/foto2.jpg);
+}
+#services .service + .service + .service {
+  background-image: url(images/foto3.jpg);
+}
+#services .service + .service + .service + .service {
+  background-image: url(images/foto4.jpg);
+}
+
+.content #services > div {
+  padding: 50px 0;
+}
+.content #services > div .service {
+  width: 32.7%;
+  margin: 0 1.5 8px 1.2%;
+}
+.content #services > div .service a {
+  position: absolute;
+  bottom: 0;
+  height: auto;
+}
+.content #services > div .service a strong {
+  padding-top: 275px;
+  padding-bottom: 20px;
+}
+.content #services > div .service a span {
+  padding-bottom: 20px;
+  padding-top: 0;
+  display: none;
+  max-height: 140px;
+}
+.content #services > div .service a:hover span {
+  display: block;
+}
+
+#contacts .bread_crumbs {
+  display: none;
+}
+#contacts .map {
+  margin-left: 50%;
+  position: relative;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+#contacts .map iframe {
+  border: 0;
+  height: 660px;
+  width: 100%;
+}
+#contacts .content {
+  max-width: 1634px;
+}
+#contacts .content:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1ecad1;
+}
+#contacts .content .text {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  background: #1ecad1 url(images/slide_bg.png) right top no-repeat;
+  padding: 50px 0 0;
+  min-height: 610px;
+  width: 50%;
+  float: left;
+}
+#contacts .content h1 {
+  text-align: left;
+  margin-top: 50px;
+}
+#contacts .content h1:before, #contacts .content h1:after {
+  display: none;
+}
+#contacts .content .cont {
+  vertical-align: top;
+  margin-right: 44px;
+  margin-bottom: 25px;
+  padding-top: 4px;
+  text-align: left;
+  font-size: 1.28em;
+  line-height: 130%;
+  padding-left: 45px;
+  background: url(images/cont_icon_call.png) left top no-repeat;
+  min-height: 28px;
+}
+#contacts .content .cont a {
+  color: #14172a;
+  text-decoration: none;
+}
+#contacts .content .cont a:hover {
+  text-decoration: underline;
+}
+#contacts .content .cont + .cont {
+  background-image: url(images/cont_icon_letter.png);
+}
+#contacts .content .cont + .cont + .cont {
+  margin-right: 0px;
+  background-image: url(images/cont_icon_address.png);
 }
 
 @media screen and (max-width: 1600px) {
@@ -1369,23 +1660,27 @@ footer #social a:hover {
   }
 
   #gallery > div {
-    padding: 67px 20px 35px;
+    padding: 0px 20px 35px;
   }
-  #gallery .gallery div {
+  #gallery .gallery .gallery_fotos div {
     width: 22.64382%;
   }
 
-  #services > div {
+  #index #gallery > div {
+    padding-top: 67px;
+  }
+
+  #index #services > div {
     padding: 44px 20px 45px;
   }
-  #services .service {
+  #index #services .service {
     height: 220px;
   }
-  #services .service a {
+  #index #services .service a {
     font-size: 1.21em;
     line-height: 145%;
   }
-  #services .service a span {
+  #index #services .service a span {
     height: 60px;
     padding: 5px 24.02402% 5px 4.5045%;
   }
@@ -1396,6 +1691,14 @@ footer #social a:hover {
   #stages > div li {
     width: 20.19584%;
     margin: 0 6.11995% 55px;
+  }
+
+  #contacts .map iframe {
+    height: 560px;
+  }
+  #contacts .content .text {
+    background-size: auto 100%;
+    min-height: 510px;
   }
 }
 @media screen and (max-width: 1270px) {
@@ -1452,35 +1755,11 @@ footer #social a:hover {
   #action h2 {
     margin-bottom: 74px;
   }
-  @keyframes flicker_animation {
-    from {
-      width: 201px;
-      top: -35px;
-      left: 65px;
-    }
-    to {
-      width: 150px;
-      top: -4px;
-      left: 85px;
-    }
-  }
-  @-webkit-keyframes flicker_animation {
-    from {
-      width: 201px;
-      top: -35px;
-      left: 65px;
-    }
-    to {
-      width: 150px;
-      top: -4px;
-      left: 89px;
-    }
-  }
   #action .flicker {
     width: 201px;
     height: 201px;
-    top: -45px;
-    left: 46px;
+    top: -21px;
+    left: 71px;
   }
   #action .slick-slider {
     margin: 0;
@@ -1492,24 +1771,28 @@ footer #social a:hover {
   }
 
   #gallery > div {
-    padding: 47px 20px 20px;
+    padding: 0px 20px 20px;
   }
-  #gallery .gallery div {
+  #gallery .gallery .gallery_fotos div {
     width: 21.78703%;
   }
 
-  #services > div {
+  #index #gallery > div {
+    padding-top: 47px;
+  }
+
+  #index #services > div {
     padding: 34px 20px 35px;
   }
-  #services .service {
+  #index #services .service {
     height: 180px;
     margin: 0 0 8px 2px;
   }
-  #services .service a {
+  #index #services .service a {
     font-size: 0.98em;
     line-height: 145%;
   }
-  #services .service a span {
+  #index #services .service a span {
     height: 45px;
     padding: 5px 24.02402% 5px 4.5045%;
   }
@@ -1524,6 +1807,41 @@ footer #social a:hover {
   #stages > div li {
     width: 24.4798%;
     margin: 0 4.28397% 55px;
+  }
+
+  .content .text .left {
+    margin: 10px 30px 25px 0;
+  }
+
+  #services .service {
+    height: 224px;
+    width: 49.2%;
+  }
+  #services .service a {
+    font-size: 1.31em;
+    line-height: 145%;
+  }
+  #services .service a span {
+    padding: 0 0 0 110px;
+    line-height: 224px;
+  }
+
+  .content #services > div .service {
+    width: 32.5%;
+  }
+  .content #services > div .service a strong {
+    font-size: 20px;
+  }
+
+  #contacts .map iframe {
+    height: 460px;
+  }
+  #contacts .content .text {
+    background-size: auto 100%;
+    min-height: 410px;
+  }
+  #contacts .content h1 {
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -1577,6 +1895,10 @@ footer #social a:hover {
     display: inline-block;
     padding: 15px 0;
   }
+  #header nav ul li.active > a {
+    color: #14172a;
+    text-decoration: underline;
+  }
   #header nav ul li:before {
     margin-right: 5px;
   }
@@ -1603,6 +1925,11 @@ footer #social a:hover {
   }
 
   .main_section h2 {
+    font-size: 2.34em;
+    line-height: 145%;
+  }
+
+  h1 {
     font-size: 2.34em;
     line-height: 145%;
   }
@@ -1663,17 +1990,14 @@ footer #social a:hover {
     line-height: 158%;
   }
 
-  #gallery > div {
-    padding: 47px 20px 20px;
-  }
   #gallery .gallery p a {
     font-size: 0.70em;
   }
-  #gallery .gallery div {
+  #gallery .gallery .gallery_fotos div {
     width: 44.2%;
   }
 
-  #services .service {
+  #index #services .service {
     width: 49.3%;
   }
 
@@ -1682,6 +2006,7 @@ footer #social a:hover {
   }
   #reviews > div {
     padding: 30px;
+    max-width: 500px;
   }
   #reviews .reviews_slider .slick-next {
     right: 0;
@@ -1738,6 +2063,61 @@ footer #social a:hover {
   #stages > div li {
     width: 47.5%;
     margin: 0 1% 55px;
+  }
+
+  .bread_crumbs {
+    margin-top: 93px;
+  }
+
+  #services .service {
+    width: 99%;
+    height: 274px;
+  }
+  #services .service a {
+    font-size: 1.61em;
+    line-height: 145%;
+  }
+  #services .service a span {
+    width: 20%;
+    padding: 0 0 0 130px;
+    line-height: 274px;
+  }
+
+  .content #services > div .service {
+    height: 224px;
+    width: 31.9%;
+  }
+  .content #services > div .service a strong {
+    font-size: 16px;
+    line-height: 145%;
+  }
+  .content #services > div .service a span {
+    padding-bottom: 20px;
+    padding-top: 0;
+    display: none;
+    max-height: 140px;
+  }
+  .content #services > div .service a:hover span {
+    display: block;
+  }
+
+  #contacts .map iframe {
+    height: 410px;
+  }
+  #contacts .content {
+    margin-top: 95px;
+  }
+  #contacts .content .text {
+    background-size: auto 100%;
+    background-position: center lrft;
+    min-height: 360px;
+  }
+  #contacts .content h1 {
+    margin-top: 0;
+  }
+  #contacts .content .cont {
+    font-size: 1.08em;
+    line-height: 145%;
   }
 }
 @media screen and (max-width: 590px) {
@@ -1839,10 +2219,10 @@ footer #social a:hover {
     width: 290px;
   }
 
-  #services .service {
+  #index #services .service {
     width: 45.3%;
   }
-  #services .service a {
+  #index #services .service a {
     font-size: 0.78em;
     line-height: 145%;
   }
@@ -1877,14 +2257,11 @@ footer #social a:hover {
     background-size: 95%;
   }
 
-  #gallery > div {
-    padding: 47px 20px 20px;
-  }
   #gallery .gallery p a {
     font-size: 0.70em;
   }
-  #gallery .gallery div {
-    width: 44.2%;
+  #gallery .gallery .gallery_fotos div {
+    width: 43.5%;
   }
 
   #reviews {
@@ -1892,6 +2269,7 @@ footer #social a:hover {
   }
   #reviews > div {
     padding: 30px;
+    max-width: 330px;
   }
   #reviews .reviews_slider .slick-slide .avatar {
     float: none;
@@ -1944,6 +2322,83 @@ footer #social a:hover {
   #stages > div li {
     width: 47.5%;
     margin: 0 1% 55px;
+  }
+
+  .bread_crumbs {
+    margin-top: 80px;
+  }
+
+  .content h1 {
+    font-size: 1.84em;
+    line-height: 145%;
+  }
+
+  #services .service {
+    height: 224px;
+  }
+  #services .service a {
+    font-size: 1.21em;
+    line-height: 145%;
+  }
+  #services .service a span {
+    padding: 0 0 0 110px;
+    line-height: 224px;
+  }
+
+  .content #services > div .service {
+    height: 174px;
+    width: 100%;
+    margin: 0 0 8px;
+  }
+  .content #services > div .service a strong {
+    font-size: 20px;
+  }
+  .content #services > div .service a span {
+    padding-bottom: 20px;
+    padding-top: 0;
+    display: none;
+    max-height: 80px;
+  }
+  .content #services > div .service a:hover span {
+    display: block;
+  }
+
+  #contacts .map {
+    margin-left: 0;
+  }
+  #contacts .map iframe {
+    height: 210px;
+  }
+  #contacts .content {
+    margin-top: 95px;
+  }
+  #contacts .content:before {
+    width: 100%;
+  }
+  #contacts .content .text {
+    background: none;
+    min-height: 1px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    float: none;
+    width: auto;
+  }
+  #contacts .content h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  #contacts .content .cont {
+    font-size: 1.08em;
+    line-height: 145%;
+  }
+}
+@media screen and (max-width: 510px) {
+  #index #gallery .gallery .gallery_fotos {
+    padding-bottom: 40px;
+  }
+  #index #gallery .gallery .gallery_fotos div {
+    width: 90%;
+    margin: 0;
   }
 }
 @media screen and (max-width: 450px) {
@@ -2014,10 +2469,10 @@ footer #social a:hover {
     width: 290px;
   }
 
-  #services .service {
+  #index #services .service {
     width: 100%;
   }
-  #services .service a {
+  #index #services .service a {
     font-size: 0.98em;
     line-height: 145%;
   }
@@ -2065,16 +2520,13 @@ footer #social a:hover {
     right: auto;
   }
 
-  #gallery > div {
-    padding: 47px 20px 20px;
-  }
   #gallery .gallery p a {
     display: inline-block;
   }
   #gallery .gallery p .other {
     margin-bottom: 30px;
   }
-  #gallery .gallery div {
+  #gallery .gallery .gallery_fotos div {
     width: 90%;
   }
 
@@ -2082,7 +2534,8 @@ footer #social a:hover {
     padding: 60px 20px;
   }
   #reviews > div {
-    padding: 30px;
+    padding: 20px;
+    max-width: 230px;
   }
   #reviews .reviews_slider .slick-slide .avatar {
     float: none;
@@ -2146,7 +2599,7 @@ footer #social a:hover {
   }
 
   #stages > div {
-    padding: 49px 20px 5px;
+    padding: 25px 20px 5px;
   }
   #stages > div li {
     width: 80%;
@@ -2158,6 +2611,43 @@ footer #social a:hover {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .content .text .left {
+    float: left;
+    margin: 10px 0px 0px 0;
+    width: 100%;
+  }
+
+  .bread_crumbs {
+    margin-top: 70px;
+  }
+
+  #services .service {
+    height: 124px;
+  }
+  #services .service a {
+    font-size: 0.91em;
+    line-height: 145%;
+  }
+  #services .service a span {
+    padding: 0 0 0 50px;
+    line-height: 124px;
+  }
+  #services .service a:hover span {
+    background-size: auto 30%;
+  }
+  #services .service.service_more {
+    height: auto;
+  }
+  #services .service.service_more strong {
+    font-size: 18px;
+    line-height: 145%;
+  }
+  #services .service.service_more span {
+    font-size: 13px;
+    line-height: 145%;
+    padding: 15px 20px 20px;
+  }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=template_styles.css.map */

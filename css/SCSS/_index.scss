@@ -10,7 +10,7 @@
 }
 
 #main_slider {
-    /*background: url(../images/slider.jpg) center top no-repeat;*/
+    /*background: url(images/slider.jpg) center top no-repeat;*/
     border-bottom: 1px solid #f5f5f8;
     position: relative;
     
@@ -39,7 +39,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            background: $color_a url(../images/slide_bg.png) right top no-repeat;
+            background: $color_a url(images/slide_bg.png) right top no-repeat;
             background-size: 77.54% auto;
         }
     }
@@ -115,7 +115,7 @@
 }
 
 #advantages {
-    background: #fafafb /*url(../images/advantages_bg.png) center top no-repeat*/;
+    background: #fafafb /*url(images/advantages_bg.png) center top no-repeat*/;
     border-bottom: 1px solid #f5f5f8;
 
     &>div {
@@ -156,19 +156,19 @@
             }
         }
         .slide1 {
-            background-image: url(../images/advantages_icon1.png);
+            background-image: url(images/advantages_icon1.png);
         }
         .slide2 {
-            background-image: url(../images/advantages_icon2.png);
+            background-image: url(images/advantages_icon2.png);
         }
         .slide3 {
-            background-image: url(../images/advantages_icon3.png);
+            background-image: url(images/advantages_icon3.png);
         }
         .slide4 {
-            background-image: url(../images/advantages_icon4.png);
+            background-image: url(images/advantages_icon4.png);
         }
         .slide5 {
-            background-image: url(../images/advantages_icon5.png);
+            background-image: url(images/advantages_icon5.png);
         }
         
         .slick-arrow {
@@ -186,18 +186,18 @@
         }
         .slick-prev {
             left: 15px;
-            background: url(../images/arr_left.png)  50% center no-repeat;
+            background: url(images/arr_left.png)  50% center no-repeat;
             
             &:hover {
-                background-image: url(../images/arr_left_hover.png);
+                background-image: url(images/arr_left_hover.png);
             }
         }
         .slick-next {
             right:15px;
-            background:  url(../images/arr_right.png) 50% center no-repeat;
+            background:  url(images/arr_right.png) 50% center no-repeat;
                 
             &:hover {
-                background-image: url(../images/arr_right_hover.png);
+                background-image: url(images/arr_right_hover.png);
             } 
         }
     }
@@ -205,8 +205,8 @@
 }
 
 
-#services {
-    background: #fff /*url(../images/uslugi.jpg) center top no-repeat*/;
+#index #services {
+    background: #fff /*url(images/uslugi.jpg) center top no-repeat*/;
 
     &>div {
         max-width: 1820px;
@@ -226,7 +226,7 @@
         text-align: left;
         box-shadow: 0 0 21px rgba(0, 0, 0, 0.19);
         margin: 0 3px 8px 2px;
-        background: url(../images/foto1.jpg) center center no-repeat;
+        background: url(images/foto1.jpg) center center no-repeat;
         background-size: cover;
         
         a {
@@ -252,7 +252,7 @@
                 vertical-align: middle;
                 width: 100%;
                 padding: 5px 80/333*100% 5px 20/333*100%;
-                background: $color_a url(../images/arrow.png) 98.7% center no-repeat;
+                background: $color_a url(images/arrow.png) 98.7% center no-repeat;
                 background-size: auto 90%;
             }
             
@@ -263,19 +263,19 @@
     }
     
     .service + .service {
-        background-image: url(../images/foto2.jpg);
+        background-image: url(images/foto2.jpg);
     }
     .service + .service + .service {
-        background-image: url(../images/foto3.jpg);
+        background-image: url(images/foto3.jpg);
     }
     .service + .service + .service + .service {
-        background-image: url(../images/foto4.jpg);
+        background-image: url(images/foto4.jpg);
     }
     
 }
 
 #action {
-    background: #f8f8fa /*url(../images/action.jpg) center top no-repeat*/;
+    background: #f8f8fa /*url(images/action.jpg) center top no-repeat*/;
     border-bottom: 1px solid #f5f5f8;
     margin-top: 90px;
 
@@ -300,38 +300,30 @@
             left: 49.4%;
             width: 143px;
             height: 49px;
-            background: url(../images/pointer.png) center top no-repeat;
+            background: url(images/pointer.png) center top no-repeat;
         }
     }
     
     @keyframes flicker_animation {
-        from {
-          width: 251px;
-          top: -44px;
-          left: 46px;
+        0% {
+            transform: scale(1.1);
         }
-        to {
-          width: 200px;
-          top: -19px;
-          left: 71px;
+        100% {
+            transform: scale(0.9);
         }
     }
     
       /* Префикс для Chrome, Opera, Safari */
     @-webkit-keyframes flicker_animation {
-        from {
-          width: 251px;
-          top: -44px;
-          left: 46px;
+        0% {
+            -webkit-transform: scale(1.1);
         }
-        to {
-          width: 200px;
-          top: -19px;
-          left: 71px;
+        100% {
+            -webkit-transform: scale(0.9);
         }
     }
     .flicker {
-        background: url(../images/flicker.png) center top no-repeat;
+        background: url(images/flicker.png) center top no-repeat;
         background-size: 100%;
         position: absolute;
         width: 251px;
@@ -350,7 +342,7 @@
         height: 585/530*100%;
         right: 0;
         top: -55px;
-        background: url(../images/action_img.png) left top no-repeat;
+        background: url(images/action_img.png) left top no-repeat;
         z-index: 1;
         
         &:after {
@@ -360,7 +352,7 @@
             bottom: 0;
             width: 833/942*100%;
             height: 24px;
-            background: url(../images/shadow.png) left bottom no-repeat;
+            background: url(images/shadow.png) left bottom no-repeat;
         }
     }
     
@@ -418,12 +410,12 @@
 	}
 	.slick-prev {
 	    left: auto;
-            background: url(../images/arrow_left2.png) center no-repeat;
+            background: url(images/arrow_left2.png) center no-repeat;
             margin-left: 0;
             right: 95px;
 	}
 	.slick-next {
-	    background:  url(../images/arrow_right2.png) 100% 3px no-repeat;
+	    background:  url(images/arrow_right2.png) 100% 3px no-repeat;
 	    right: 0;
 	    margin-right: 0;
 	}
@@ -431,12 +423,12 @@
 }
 
 #gallery {
-    background: #fff /*url(../images/gallery.jpg) center top no-repeat*/;
+    background: #fff /*url(images/gallery.jpg) center top no-repeat*/;
 
     &>div {
         max-width: 1634px;
         margin: 0 auto;
-        padding: 87px 20px 45px;
+        padding: 0px 20px 45px;
         text-align: center;
     }
     h2 {
@@ -445,8 +437,12 @@
     
 }
 
+#index #gallery > div {
+    padding-top: 87px;
+}
+
 #partners {
-    /*background: #fefefe url(../images/partners.jpg) center top no-repeat;*/
+    /*background: #fefefe url(images/partners.jpg) center top no-repeat;*/
     border-top: 1px solid #f5f5f8;
     
     background: #e2e2e2;
@@ -507,21 +503,19 @@
     
 }
 #reviews {
-    background: #fff url(../images/reviews.jpg) center top no-repeat;
+    background: #fff url(images/reviews.jpg) center top no-repeat;
     background-size: cover;
     padding: 110px 20px;
     
     &>div {
-    max-width: 772px;
-    margin: 0 auto;
-    padding: 45px 95px 50px 95px;
-    background: #121d2f url(../images/reviews_black.jpg) center bottom no-repeat;
-    background-size: 100% auto;
-    color: #fff;
-    text-align: left;
-    font-family: $font_family_r;
-    
-    
+        max-width: 772px;
+        margin: 0 auto;
+        padding: 45px 95px 50px 95px;
+        background: #121d2f url(images/reviews_black.jpg) center bottom no-repeat;
+        background-size: 100% auto;
+        color: #fff;
+        text-align: left;
+        font-family: $font_family_r;
     }
     
     h2 {
@@ -572,12 +566,12 @@
                 
                 .nikname {
                     padding-left: 30px;
-                    background: url(../images/name_icon.png) left center no-repeat;
+                    background: url(images/name_icon.png) left center no-repeat;
                     margin-right: 20px;
                 }
                 time {
                     padding-left: 30px;
-                    background: url(../images/time_icon.png) left center no-repeat;
+                    background: url(images/time_icon.png) left center no-repeat;
                     margin-right: 30px;
                     white-space: nowrap;
                 }
@@ -605,8 +599,10 @@
 	}
     }
 }
+
+
 #stages {
-    background: #fff /*url(../images/etapi.jpg) center top no-repeat*/;
+    background: #fff /*url(images/etapi.jpg) center top no-repeat*/;
     
     &>div {
     max-width: 1634px;
@@ -645,30 +641,30 @@
             font-size: 24px;
             display: block;
             margin-bottom: 16px;
-            background: url(../images/stages_icon1.png) left top no-repeat;
+            background: url(images/stages_icon1.png) left top no-repeat;
         }
     }
     
     li+li:before {
-        background-image: url(../images/stages_icon2.png);
+        background-image: url(images/stages_icon2.png);
     }
     li+li+li:before {
-        background-image: url(../images/stages_icon3.png);
+        background-image: url(images/stages_icon3.png);
     }
     li+li+li+li:before {
-        background-image: url(../images/stages_icon4.png);
+        background-image: url(images/stages_icon4.png);
     }
     li+li+li+li+li:before {
-        background-image: url(../images/stages_icon5.png);
+        background-image: url(images/stages_icon5.png);
     }
     li+li+li+li+li+li:before {
-        background-image: url(../images/stages_icon6.png);
+        background-image: url(images/stages_icon6.png);
     }
 
 }
 
 #main_form {
-    background: url(../images/form_bg.jpg) center center no-repeat;
+    background: url(images/form_bg.jpg) center center no-repeat;
     background-size: cover;
 
     &>div {
@@ -693,7 +689,7 @@
         font-size: 1.28em;
         line-height: 130%;
         padding-left: 45px;
-        background: url(../images/cont_icon_call.png) left top no-repeat;
+        background: url(images/cont_icon_call.png) left top no-repeat;
         min-height: 28px;
         
         a {
@@ -706,11 +702,11 @@
         }
     }
     .cont+.cont {
-        background-image: url(../images/cont_icon_letter.png);
+        background-image: url(images/cont_icon_letter.png);
     }
     .cont+.cont+.cont {
         margin-right: 0px;
-        background-image: url(../images/cont_icon_address.png);
+        background-image: url(images/cont_icon_address.png);
     }
     
     form {
@@ -721,6 +717,14 @@
             text-align: left;
             font-size: 0.86em;
             line-height: 145%;
+        }
+    }
+}
+
+#index {
+    #reviews {
+        &>div {
+            max-width: 772px;
         }
     }
 }
