@@ -158,6 +158,16 @@
 	    }
             .gallery_fotos div {
                 width: 90%;
+		height: 180px;
+		
+            }
+        }
+    }
+    
+    #index #gallery {
+        .gallery {
+            .gallery_fotos div {
+		height: 180px;
             }
         }
     }

@@ -180,6 +180,7 @@
 	    }
             .gallery_fotos div {
                 width: 44.2%;
+		height: 250px
             }
         }
     }
@@ -366,4 +367,15 @@
     }
     
     
+}
+
+@media screen and (max-width: 800px) {
+    #gallery {
+        .gallery {
+            .gallery_fotos div {
+                width: 44.2%;
+		height: 200px;
+            }
+        }
+    }
 }

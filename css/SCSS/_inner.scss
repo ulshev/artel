@@ -331,15 +331,21 @@
 .popup {
     position: fixed;
     top: 50%;
-    margin-top: -250px;;
+    margin-top: -386px;
     left: 50%;
-    margin-left: -250px;
+    margin-left: -386px;
     background: #1ecad1 url(images/popup_bg.jpg) center center no-repeat;
     background-size: cover;
+    width: 612px;
+    padding: 80px;
+    z-index: 100;
     
     .close {
         position: absolute;
-        
+        width: 38px;
+        height: 38px;
+        top: 20px;
+        right: 20px;
     }
 }
 

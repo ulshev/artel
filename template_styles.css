@@ -275,9 +275,13 @@ a.button:active {
   margin: 0 13px 30px;
   width: 23.13341%;
   overflow: hidden;
+  text-align: center;
+  height: 250px;
 }
 .gallery .gallery_fotos div a {
-  display: block;
+  display: inline-block;
+  height: 100%;
+  max-width: 100%;
   position: relative;
 }
 .gallery .gallery_fotos div a:after {
@@ -294,7 +298,8 @@ a.button:active {
   display: block;
 }
 .gallery .gallery_fotos div img {
-  width: 100%;
+  /*width: 100%;*/
+  height: 100%;
 }
 
 .slick-slider {
@@ -1695,14 +1700,21 @@ footer #social a:hover {
 .popup {
   position: fixed;
   top: 50%;
-  margin-top: -250px;
+  margin-top: -386px;
   left: 50%;
-  margin-left: -250px;
+  margin-left: -386px;
   background: #1ecad1 url(images/popup_bg.jpg) center center no-repeat;
   background-size: cover;
+  width: 612px;
+  padding: 80px;
+  z-index: 100;
 }
 .popup .close {
   position: absolute;
+  width: 38px;
+  height: 38px;
+  top: 20px;
+  right: 20px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -1769,6 +1781,7 @@ footer #social a:hover {
   }
   #gallery .gallery .gallery_fotos div {
     width: 22.64382%;
+    height: 210px;
   }
 
   #index #gallery > div {
@@ -1880,6 +1893,7 @@ footer #social a:hover {
   }
   #gallery .gallery .gallery_fotos div {
     width: 21.78703%;
+    height: 150px;
   }
 
   #index #gallery > div {
@@ -2102,6 +2116,7 @@ footer #social a:hover {
   }
   #gallery .gallery .gallery_fotos div {
     width: 44.2%;
+    height: 250px;
   }
 
   #index #services .service {
@@ -2238,6 +2253,12 @@ footer #social a:hover {
   }
   #reviews.no_bg div.reviews_items > div:nth-child(2n) {
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  #gallery .gallery .gallery_fotos div {
+    width: 44.2%;
+    height: 200px;
   }
 }
 @media screen and (max-width: 590px) {
@@ -2387,6 +2408,7 @@ footer #social a:hover {
   }
   #gallery .gallery .gallery_fotos div {
     width: 43.5%;
+    height: 180px;
   }
 
   #reviews {
@@ -2523,6 +2545,7 @@ footer #social a:hover {
   #index #gallery .gallery .gallery_fotos div {
     width: 90%;
     margin: 0;
+    height: 250px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -2657,6 +2680,11 @@ footer #social a:hover {
   }
   #gallery .gallery .gallery_fotos div {
     width: 90%;
+    height: 180px;
+  }
+
+  #index #gallery .gallery .gallery_fotos div {
+    height: 180px;
   }
 
   #reviews {
