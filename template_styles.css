@@ -1405,6 +1405,15 @@ footer #social a:hover {
 #services {
   position: relative;
   z-index: 2;
+  /*.service + .service {
+      background-image: url(images/foto2.jpg);
+  }
+  .service + .service + .service {
+      background-image: url(images/foto3.jpg);
+  }
+  .service + .service + .service + .service {
+      background-image: url(images/foto4.jpg);
+  }*/
 }
 #services > div {
   max-width: 1634px;
@@ -1447,7 +1456,7 @@ footer #social a:hover {
   height: 274px;
   text-align: left;
   margin: 0 3px 8px 2px;
-  background: #14172a url(images/foto1.jpg) center center no-repeat;
+  background: #14172a center center no-repeat;
   background-size: cover;
 }
 #services .service a {
@@ -1472,7 +1481,7 @@ footer #social a:hover {
   vertical-align: middle;
   background-position: left center;
   background-repeat: no-repeat;
-  background-color: #14172a;
+  background-color: rgba(20, 23, 42, 0.8);
   -webkit-transition: background-color 0.3s ease-out 0s;
   -moz-transition: background-color 0.3s ease-out 0s;
   -o-transition: background-color 0.3s ease-out 0s;
@@ -1516,15 +1525,6 @@ footer #social a:hover {
 #services .service.service_more a:hover strong, #services .service.service_more a:hover span {
   background: none;
 }
-#services .service + .service {
-  background-image: url(images/foto2.jpg);
-}
-#services .service + .service + .service {
-  background-image: url(images/foto3.jpg);
-}
-#services .service + .service + .service + .service {
-  background-image: url(images/foto4.jpg);
-}
 
 .content #services > div {
   padding: 50px 0;
@@ -1537,10 +1537,6 @@ footer #social a:hover {
   position: absolute;
   bottom: 0;
   height: auto;
-  -webkit-transition: display 0.3s ease-out 0s;
-  -moz-transition: display 0.3s ease-out 0s;
-  -o-transition: display 0.3s ease-out 0s;
-  transition: display 0.3s ease-out 0s;
 }
 .content #services > div .service a strong {
   padding-top: 275px;
@@ -2787,7 +2783,7 @@ footer #social a:hover {
     margin: 0 auto 35px;
     text-align: center;
     display: block;
-    background-position: 45% 0;
+    background-position: 40% 0;
   }
   #stages > div li:before {
     margin-left: auto;

@@ -84,7 +84,7 @@
         height: 274px;
         text-align: left;
         margin: 0 3px 8px 2px;
-        background: #14172a url(images/foto1.jpg) center center no-repeat;
+        background: #14172a /*url(images/foto1.jpg)*/ center center no-repeat;
         background-size: cover;
         
         a {
@@ -109,7 +109,7 @@
                 vertical-align: middle;
                 background-position: left center;
                 background-repeat: no-repeat;
-                background-color: #14172a;
+                background-color: rgba(20,23,42,0.8);
                 @include transition(background-color);
                 
             }
@@ -117,7 +117,7 @@
             &:hover {
                 span {
                     background-image: url(images/arrow.png);    
-                background-color: rgba(30,202,209, 0.8);
+                    background-color: rgba(30,202,209, 0.8);
                 }
                 
             }
@@ -159,7 +159,7 @@
         }
     }
     
-    .service + .service {
+    /*.service + .service {
         background-image: url(images/foto2.jpg);
     }
     .service + .service + .service {
@@ -167,7 +167,7 @@
     }
     .service + .service + .service + .service {
         background-image: url(images/foto4.jpg);
-    }
+    }*/
     
     
     
@@ -186,7 +186,7 @@
                 bottom: 0;
                 height: auto;
                 
-                @include transition(display);
+                //@include transition(display);
                 
                 strong {
                     padding-top: 275px;
