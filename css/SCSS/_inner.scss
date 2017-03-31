@@ -308,18 +308,50 @@
         >div {
             background-color: #f8f8fa;
             color: #14172a;
-            padding: 30px 30px 0;
+            padding: 30px 30px 0px;
             width: 42%;
             text-align: left;
-            float: left;
+            //float: left;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 20px 50px;
+            position: relative;
             
             &:after {
                 @include clear();
             }
+            
+            .avatar {
+                margin-bottom: 70px;
+            }
+            
+            span + p {
+                line-height: 213%;
+                margin-top: 7px;
+                max-height: none;
+                overflow: hidden;
+            }
+            
+                
+            .likes {
+                position: absolute;
+                top: 190px;
+                left: 30px;
+                width: 146px;
+                text-align: center;
+                
+                a {
+                    margin: 0 5px;
+                    
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
         }
         >div:nth-child(2n) {
-            margin: 0 0 50px 100%-70/1288*100%-42%;
-            float: none;
+            //margin: 0 0 50px 100%-70/1288*100%-42%;
+            //float: none;
         }
         >p{
             text-align: center;

@@ -1176,6 +1176,7 @@ footer #social a:hover {
   float: left;
   line-height: 146px;
   text-align: center;
+  margin-bottom: 30px;
 }
 #reviews .avatar img {
   vertical-align: middle;
@@ -1647,19 +1648,40 @@ footer #social a:hover {
 #reviews.no_bg div.reviews_items > div {
   background-color: #f8f8fa;
   color: #14172a;
-  padding: 30px 30px 0;
+  padding: 30px 30px 0px;
   width: 42%;
   text-align: left;
-  float: left;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 20px 50px;
+  position: relative;
 }
 #reviews.no_bg div.reviews_items > div:after {
   content: "";
   display: block;
   clear: both;
 }
-#reviews.no_bg div.reviews_items > div:nth-child(2n) {
-  margin: 0 0 50px 52.56522%;
-  float: none;
+#reviews.no_bg div.reviews_items > div .avatar {
+  margin-bottom: 70px;
+}
+#reviews.no_bg div.reviews_items > div span + p {
+  line-height: 213%;
+  margin-top: 7px;
+  max-height: none;
+  overflow: hidden;
+}
+#reviews.no_bg div.reviews_items > div .likes {
+  position: absolute;
+  top: 190px;
+  left: 30px;
+  width: 146px;
+  text-align: center;
+}
+#reviews.no_bg div.reviews_items > div .likes a {
+  margin: 0 5px;
+}
+#reviews.no_bg div.reviews_items > div .likes a:hover {
+  opacity: 0.7;
 }
 #reviews.no_bg div.reviews_items > p {
   text-align: center;
@@ -1842,6 +1864,11 @@ footer #social a:hover {
     background-size: auto 100%;
     min-height: 510px;
   }
+
+  #reviews.no_bg div.reviews_items > div {
+    width: 38%;
+    margin: 0 20px 40px;
+  }
 }
 @media screen and (max-width: 1270px) {
   #header > div {
@@ -1989,6 +2016,11 @@ footer #social a:hover {
   }
   #contacts .content h1 {
     margin-top: 0;
+  }
+
+  #reviews.no_bg div.reviews_items > div {
+    width: 38%;
+    margin: 0 20px 40px;
   }
 
   .popup {
@@ -2304,11 +2336,8 @@ footer #social a:hover {
     width: auto;
     text-align: left;
     float: none;
-    padding-bottom: 30px;
     margin-bottom: 40px;
-  }
-  #reviews.no_bg div.reviews_items > div:nth-child(2n) {
-    margin-left: 0;
+    max-width: 600px;
   }
 
   .popup {
@@ -2626,6 +2655,14 @@ footer #social a:hover {
   #contacts .content .cont {
     font-size: 1.08em;
     line-height: 145%;
+  }
+
+  #reviews.no_bg div.reviews_items > div .likes {
+    top: -30px;
+    margin-top: -20px;
+    left: auto;
+    width: auto;
+    position: relative;
   }
 
   .popup {

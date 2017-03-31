@@ -356,6 +356,20 @@
 	    }
         }
     }
+    #reviews.no_bg {
+        div.reviews_items {
+            
+            >div {
+		.likes {
+		    top: -30px;
+		    margin-top: -20px;
+		    left: auto;
+		    width: auto;
+		    position: relative;
+		} 
+            }
+        }
+    }
     
     .popup {
         top: 10%; // 50%;

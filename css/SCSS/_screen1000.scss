@@ -364,12 +364,13 @@
 		width: auto;
 		text-align: left;
 		float: none;
-		padding-bottom: 30px;
+		//padding-bottom: 30px;
 		margin-bottom: 40px;
+		max-width: 600px;
 		
 	    }
 	    >div:nth-child(2n) {
-		margin-left: 0;
+		//margin-left: 0;
 	    }
 	}
 	
