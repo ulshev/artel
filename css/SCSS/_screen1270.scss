@@ -209,5 +209,35 @@
     }
     
     
+    .popup {
+        top: 0; // 50%;
+        //margin-top: -386px;
+        margin-left: -316px;
+        width: 512px;
+        padding: 60px;
+        
+        h3 + p {
+            margin-bottom: 0
+        }
+        .form {
+            input, textarea {
+                width: 90%;
+                margin-bottom: 15px;
+            }
+            textarea {
+                max-width: 90%;
+                min-width: 90%;
+                margin-bottom: 30px;
+            }
+            
+            input[type="submit"], input[type="reset"] {
+                width: 195px;
+                margin-right: 15px;
+                margin-left: 15px;
+            }
+        }
+    }
+    
+    
     
 }

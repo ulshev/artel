@@ -342,7 +342,7 @@
     text-align: center;
     
     .close {
-        position: fixed;
+        position: absolute;
         width: 35px;
         height: 35px;
         top: 20px;
@@ -386,6 +386,7 @@
             background-color: #14172a;
             margin-right: 15px;
             margin-left: 15px;
+            color: #fff;
         }
         input[type="reset"] {
             width: 215px;

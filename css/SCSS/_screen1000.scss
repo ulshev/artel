@@ -201,11 +201,18 @@
 	}
 	
 	.reviews_slider  {
+	    height: 165px;
 	    .slick-next {
 		    right: 0;
 		    left: auto;
 		    margin-left: 0;
 	    }
+	    
+	    span + p {
+                margin-top: 7px;
+                line-height: 213%;
+                max-height: 115px;
+            }
 	}
     }
     
@@ -364,6 +371,45 @@
 	    }
 	}
 	
+    }
+    
+    
+    .popup {
+        //top: -20%; // 50%;
+        //margin-top: -386px;
+        margin-left: -266px;
+        width: 412px;
+        padding: 40px;
+	
+	.close {
+	    top: 10px;
+	    right: 10px;
+	}
+        
+        h3 + p {
+            font-size: 0.84em;
+	    line-height: 145%;
+        }
+        .form {
+            input, textarea {
+                width: 85%;
+                margin-bottom: 15px;
+		height: 28px;
+		font-size: 1.2em;
+		line-height: 140%;
+            }
+            textarea {
+                max-width: 85%;
+                min-width: 85%;
+                margin-bottom: 30px;
+            }
+            
+            input[type="submit"], input[type="reset"] {
+                width: 175px;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
     }
     
     

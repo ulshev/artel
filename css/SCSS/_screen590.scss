@@ -356,6 +356,59 @@
 	    }
         }
     }
+    
+    .popup {
+        top: 10%; // 50%;
+        //margin-top: -386px;
+        margin-left: -156px;
+        width: 272px;
+        padding: 40px 20px 30px;
+	
+	.close {
+	    top: 10px;
+	    right: 10px;
+	    width: 25px;
+	    height: 25px;
+	}
+        
+        h3 {
+            font-size: 1.45em;
+            line-height: 145%;
+	    margin-bottom: 10px;
+        }
+        h3 + p {
+            font-size: 0.74em;
+	    line-height: 145%;
+        }
+        .form {
+	    label {
+		font-size: 0.74em;
+		line-height: 145%;
+		padding-left: 7px;
+	    }
+            input, textarea {
+                width: 85%;
+                margin-bottom: 15px;
+		padding: 10px;
+		height: 23px;
+		font-size: 1em;
+		line-height: 140%;
+            }
+            textarea {
+                max-width: 85%;
+                min-width: 85%;
+                margin-bottom: 20px;
+            }
+            
+            input[type="submit"], input[type="reset"] {
+                width: 115px;
+                margin-right: 5px;
+                margin-left: 5px;
+		height: 43px;
+		font-size: 0.7em;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 510px) {
