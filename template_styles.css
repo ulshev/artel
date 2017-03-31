@@ -144,11 +144,11 @@ form.form {
 }
 
 .form input, .form textarea, .form select {
-  padding: 15px 25px;
+  padding: 10px 25px;
   margin-bottom: 30px;
   margin-right: 7px;
   width: 425px;
-  height: 28px;
+  height: 38px;
   outline: none;
   border: 1px solid transparent;
   background-color: RGBA(255, 255, 255, 0.26);
@@ -170,7 +170,7 @@ form.form textarea {
   line-height: 140%;
 }
 
-form.form input[type="submit"] {
+form.form input[type="submit"], form.form input[type="reset"] {
   margin-right: 0;
   width: 315px;
   height: 58px;
@@ -184,7 +184,7 @@ form.form input[type="submit"]:hover {
   box-shadow: inset 0 0 2px RGBA(0, 0, 0, 0.5);
 }
 
-form.form input[type="submit"]:active {
+form.form input[type="submit"]:active, form.form input[type="reset"]:active {
   height: 56px;
   margin-bottom: 1px;
   margin-top: 1px;
@@ -281,7 +281,7 @@ a.button:active {
 .gallery .gallery_fotos div a {
   display: inline-block;
   height: 100%;
-  max-width: 100%;
+  width: 100%;
   position: relative;
 }
 .gallery .gallery_fotos div a:after {
@@ -298,8 +298,10 @@ a.button:active {
   display: block;
 }
 .gallery .gallery_fotos div img {
-  /*width: 100%;*/
+  width: 100%;
   height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
 }
 
 .slick-slider {
@@ -1145,6 +1147,7 @@ footer #social a:hover {
 }
 #reviews .reviews_slider .slick-slide {
   padding: 15px 1px 1px;
+  height: 165px;
 }
 #reviews .reviews_slider .slick-slide:after {
   content: '';
@@ -1319,13 +1322,13 @@ footer #social a:hover {
   max-width: 772px;
 }
 
-.fancybox-enabled body {
-  /*overflow: auto;*/
+.fancybox-enabled {
+  overflow: auto;
 }
-.fancybox-enabled body .fancybox-controls--canGrab .fancybox-placeholder {
+.fancybox-enabled .fancybox-controls--canGrab .fancybox-placeholder {
   max-width: 1000px;
 }
-.fancybox-enabled body .fancybox-button--left, .fancybox-enabled body .fancybox-button--right {
+.fancybox-enabled .fancybox-button--left, .fancybox-enabled .fancybox-button--right {
   position: fixed;
   margin-top: -24px;
   top: 50%;
@@ -1334,10 +1337,10 @@ footer #social a:hover {
   height: 48px;
   background: url(images/arr_left.png) 50% center no-repeat;
 }
-.fancybox-enabled body .fancybox-button--left:after, .fancybox-enabled body .fancybox-button--right:after {
+.fancybox-enabled .fancybox-button--left:after, .fancybox-enabled .fancybox-button--right:after {
   display: none;
 }
-.fancybox-enabled body .fancybox-button--right {
+.fancybox-enabled .fancybox-button--right {
   right: 50px;
   left: auto;
   background: url(images/arr_right.png) 50% center no-repeat;
@@ -1666,8 +1669,7 @@ footer #social a:hover {
 
 .popup {
   position: fixed;
-  top: 50%;
-  margin-top: -386px;
+  top: 0;
   left: 50%;
   margin-left: -386px;
   background: #1ecad1 url(images/popup_bg.jpg) center center no-repeat;
@@ -1675,13 +1677,68 @@ footer #social a:hover {
   width: 612px;
   padding: 80px;
   z-index: 100;
+  text-align: center;
 }
 .popup .close {
-  position: absolute;
-  width: 38px;
-  height: 38px;
+  position: fixed;
+  width: 35px;
+  height: 35px;
   top: 20px;
   right: 20px;
+  background: url(images/popup_close.png) center center no-repeat;
+  cursor: pointer;
+}
+.popup h3 {
+  font-size: 2.25em;
+  line-height: 145%;
+}
+.popup h3 span {
+  color: #fff;
+}
+.popup h3 + p {
+  text-transform: uppercase;
+}
+.popup .form {
+  margin-bottom: 0;
+}
+.popup .form label {
+  display: block;
+  text-align: left;
+}
+.popup .form input, .popup .form textarea {
+  background-color: #fff;
+  width: 91.5%;
+  margin-bottom: 15px;
+  color: #14172a;
+}
+.popup .form textarea {
+  max-width: 91.5%;
+  min-width: 91.5%;
+  margin-bottom: 50px;
+}
+.popup .form input[type="submit"] {
+  width: 215px;
+  text-transform: uppercase;
+  background-color: #14172a;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.popup .form input[type="reset"] {
+  width: 215px;
+  color: #14172a;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-color: #14172a;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.popup .form input[type="submit"]:hover {
+  opacity: 0.85;
+}
+.popup .form input[type="reset"]:hover {
+  color: #fff;
+  background-color: #14172a;
+  opacity: 0.85;
 }
 
 @media screen and (max-width: 1600px) {
@@ -2730,6 +2787,7 @@ footer #social a:hover {
     margin: 0 auto 35px;
     text-align: center;
     display: block;
+    background-position: 45% 0;
   }
   #stages > div li:before {
     margin-left: auto;

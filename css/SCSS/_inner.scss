@@ -330,8 +330,8 @@
 
 .popup {
     position: fixed;
-    top: 50%;
-    margin-top: -386px;
+    top: 0; // 50%;
+    //margin-top: -600px; //-386px;
     left: 50%;
     margin-left: -386px;
     background: #1ecad1 url(images/popup_bg.jpg) center center no-repeat;
@@ -339,13 +339,71 @@
     width: 612px;
     padding: 80px;
     z-index: 100;
+    text-align: center;
     
     .close {
-        position: absolute;
-        width: 38px;
-        height: 38px;
+        position: fixed;
+        width: 35px;
+        height: 35px;
         top: 20px;
         right: 20px;
+        background: url(images/popup_close.png) center center no-repeat;
+        cursor: pointer;
+    }
+    h3 {
+        font-size: 2.25em;
+        line-height: 145%;
+        
+        span {
+            color: #fff;
+        }
+    }
+    h3 + p {
+        text-transform: uppercase;
+    }
+    .form {
+        margin-bottom: 0;
+        
+        label {
+            display: block;
+            text-align: left;
+        }
+        input, textarea {
+            background-color: #fff;
+            width: 91.5%;
+            margin-bottom: 15px;
+            color: #14172a;
+        }
+        textarea {
+            max-width: 91.5%;
+            min-width: 91.5%;
+            margin-bottom: 50px;
+        }
+        
+        input[type="submit"] {
+            width: 215px;
+            text-transform: uppercase;
+            background-color: #14172a;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+        input[type="reset"] {
+            width: 215px;
+            color: #14172a;
+            text-transform: uppercase;
+            background-color: #fff;
+            border-color: #14172a;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+        input[type="submit"]:hover {
+            opacity: 0.85;
+        }
+        input[type="reset"]:hover {
+            color: #fff;
+            background-color: #14172a;
+            opacity: 0.85;
+        }
     }
 }
 

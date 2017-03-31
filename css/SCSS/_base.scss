@@ -106,11 +106,11 @@ form.form {
 	padding-top: 13px;
 }
 .form input, .form textarea, .form select {
-	padding: 15px 25px;
+	padding: 10px 25px;
 	margin-bottom: 30px;
         margin-right: 7px;
 	width: 425px;
-	height: 28px;
+	height: 38px;
 	outline: none;
 	border: 1px solid transparent;
 	background-color: RGBA(255, 255, 255, 0.26);
@@ -131,7 +131,7 @@ form.form textarea {
 	max-height: 150px;
 	line-height: 140%;
 }
-form.form input[type="submit"] {
+form.form input[type="submit"], form.form input[type="reset"] {
 	margin-right: 0;
 	width: 315px;
         height: 58px;
@@ -143,7 +143,7 @@ form.form input[type="submit"] {
 form.form input[type="submit"]:hover {
 	box-shadow: inset 0 0 2px RGBA(0, 0, 0, 0.5);
 }
-form.form input[type="submit"]:active {
+form.form input[type="submit"]:active, form.form input[type="reset"]:active {
 	height: 56px;
 	margin-bottom: 1px;
 	margin-top: 1px;
@@ -253,7 +253,7 @@ background-size: auto;*/
 		a {
 			display: inline-block;
 			height: 100%;
-			max-width: 100%;
+			width: 100%;
 			position: relative;
 			
 			&:after {
@@ -272,8 +272,10 @@ background-size: auto;*/
 		}
 		
 		img {
-			/*width: 100%;*/
+			width: 100%;
 			height: 100%;
+			object-fit: cover;
+			vertical-align: middle;
 		}
 	}
 }

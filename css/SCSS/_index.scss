@@ -521,6 +521,7 @@
         
         .slick-slide {
             padding: 15px 1px 1px;
+            height: 165px;
             
             &:after {
                 content: '';
@@ -698,8 +699,8 @@
     }
 }
 
-.fancybox-enabled body {
-    /*overflow: auto;*/
+.fancybox-enabled {
+    overflow: auto;
     
     .fancybox-controls--canGrab .fancybox-placeholder {
         max-width: 1000px;
