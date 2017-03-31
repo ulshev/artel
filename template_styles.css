@@ -538,11 +538,11 @@ footer .foo_main_menu {
 }
 footer .foo_main_menu ul {
   border-bottom: 1px solid #1ecad1;
-  padding-bottom: 20px;
 }
 footer .foo_main_menu li {
   display: inline-block;
   margin-right: 8.55615%;
+  padding-bottom: 20px;
 }
 footer .foo_main_menu li:last-child {
   margin-right: 0;
@@ -751,21 +751,6 @@ footer #social a:hover {
   margin-left: auto;
   margin-right: auto;
 }
-#advantages .karusel_advantages .slide1 {
-  background-image: url(images/advantages_icon1.png);
-}
-#advantages .karusel_advantages .slide2 {
-  background-image: url(images/advantages_icon2.png);
-}
-#advantages .karusel_advantages .slide3 {
-  background-image: url(images/advantages_icon3.png);
-}
-#advantages .karusel_advantages .slide4 {
-  background-image: url(images/advantages_icon4.png);
-}
-#advantages .karusel_advantages .slide5 {
-  background-image: url(images/advantages_icon5.png);
-}
 #advantages .karusel_advantages .slick-arrow {
   top: 50px;
   width: 26px;
@@ -838,7 +823,7 @@ footer #social a:hover {
   text-align: left;
   box-shadow: 0 0 21px rgba(0, 0, 0, 0.19);
   margin: 0 3px 8px 2px;
-  background: url(images/foto1.jpg) center center no-repeat;
+  background: #14172a center center no-repeat;
   background-size: cover;
   overflow: hidden;
 }
@@ -871,15 +856,6 @@ footer #social a:hover {
 }
 #index #services .service a:hover span {
   background-color: #14172a;
-}
-#index #services .service + .service {
-  background-image: url(images/foto2.jpg);
-}
-#index #services .service + .service + .service {
-  background-image: url(images/foto3.jpg);
-}
-#index #services .service + .service + .service + .service {
-  background-image: url(images/foto4.jpg);
 }
 
 #action {
@@ -1162,6 +1138,10 @@ footer #social a:hover {
   min-height: 170px;
   padding-bottom: 30px;
   outline: none;
+  -webkit-user-select: inherit;
+  -moz-user-select: inherit;
+  -ms-user-select: inherit;
+  user-select: inherit;
 }
 #reviews .reviews_slider .slick-slide {
   padding: 15px 1px 1px;
@@ -1217,6 +1197,8 @@ footer #social a:hover {
 #reviews span + p {
   margin-top: 7px;
   line-height: 213%;
+  max-height: 115px;
+  overflow: hidden;
 }
 
 #stages {
@@ -1267,6 +1249,7 @@ footer #social a:hover {
   margin: 0 7.34394% 55px;
   font-size: 1.14em;
   line-height: 145%;
+  background: transparent left top no-repeat;
 }
 #stages li:before {
   counter-increment: stage;
@@ -1280,22 +1263,6 @@ footer #social a:hover {
   font-size: 24px;
   display: block;
   margin-bottom: 16px;
-  background: url(images/stages_icon1.png) left top no-repeat;
-}
-#stages li + li:before {
-  background-image: url(images/stages_icon2.png);
-}
-#stages li + li + li:before {
-  background-image: url(images/stages_icon3.png);
-}
-#stages li + li + li + li:before {
-  background-image: url(images/stages_icon4.png);
-}
-#stages li + li + li + li + li:before {
-  background-image: url(images/stages_icon5.png);
-}
-#stages li + li + li + li + li + li:before {
-  background-image: url(images/stages_icon6.png);
 }
 
 #main_form {

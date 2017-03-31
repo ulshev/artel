@@ -46,11 +46,11 @@ footer {
         
         ul {
             border-bottom: 1px solid $color_a;
-            padding-bottom: 20px;
         }
         li {
             display: inline-block;
             margin-right: 80/935*100%;
+            padding-bottom: 20px;
         }
         li:last-child {
             margin-right: 0;

@@ -155,21 +155,6 @@
                 margin-right: auto;
             }
         }
-        .slide1 {
-            background-image: url(images/advantages_icon1.png);
-        }
-        .slide2 {
-            background-image: url(images/advantages_icon2.png);
-        }
-        .slide3 {
-            background-image: url(images/advantages_icon3.png);
-        }
-        .slide4 {
-            background-image: url(images/advantages_icon4.png);
-        }
-        .slide5 {
-            background-image: url(images/advantages_icon5.png);
-        }
         
         .slick-arrow {
             top: 50px;
@@ -226,7 +211,7 @@
         text-align: left;
         box-shadow: 0 0 21px rgba(0, 0, 0, 0.19);
         margin: 0 3px 8px 2px;
-        background: url(images/foto1.jpg) center center no-repeat;
+        background: #14172a center center no-repeat;
         background-size: cover;
         overflow: hidden;
         
@@ -263,16 +248,6 @@
                 background-color: #14172a;
             }
         }
-    }
-    
-    .service + .service {
-        background-image: url(images/foto2.jpg);
-    }
-    .service + .service + .service {
-        background-image: url(images/foto3.jpg);
-    }
-    .service + .service + .service + .service {
-        background-image: url(images/foto4.jpg);
     }
     
 }
@@ -539,6 +514,10 @@
         min-height: 170px;
         padding-bottom: 30px;
         outline: none;
+        -webkit-user-select: inherit;
+        -moz-user-select: inherit;
+        -ms-user-select: inherit;
+        user-select: inherit;
         
         .slick-slide {
             padding: 15px 1px 1px;
@@ -600,6 +579,8 @@
             span + p {
                 margin-top: 7px;
                 line-height: 213%;
+                max-height: 115px;
+                overflow: hidden;
             }
         
 }
@@ -632,6 +613,7 @@
         margin: 0 120/1634*100% 55px;
         font-size: 1.14em;
         line-height: 145%;
+        background: transparent left top no-repeat;
        
         &:before {
             counter-increment:stage;
@@ -645,24 +627,7 @@
             font-size: 24px;
             display: block;
             margin-bottom: 16px;
-            background: url(images/stages_icon1.png) left top no-repeat;
         }
-    }
-    
-    li+li:before {
-        background-image: url(images/stages_icon2.png);
-    }
-    li+li+li:before {
-        background-image: url(images/stages_icon3.png);
-    }
-    li+li+li+li:before {
-        background-image: url(images/stages_icon4.png);
-    }
-    li+li+li+li+li:before {
-        background-image: url(images/stages_icon5.png);
-    }
-    li+li+li+li+li+li:before {
-        background-image: url(images/stages_icon6.png);
     }
 
 }

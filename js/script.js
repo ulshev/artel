@@ -20,7 +20,7 @@ function tweakSlider() {
 			adaptiveHeight: true
 		});
 	}else{
-		
+		//$('#index .gallery_fotos').slick('unslick');
 	}
 }
 
@@ -86,7 +86,7 @@ $(document).ready(function() {
 		infinite: true,
 		speed: 300,
 		slidesToShow: 10,
-		slidesToScroll: 4,
+		slidesToScroll: 1,
 		responsive: [
 		  {
 		    breakpoint: 1750,
@@ -125,7 +125,16 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		fade: true,
-		adaptiveHeight: true
+		adaptiveHeight: true,
+		draggable: false,
+		responsive: [
+		  {
+		    breakpoint: 1000,
+		    settings: {
+		      draggable: true
+		    }
+		  }
+		]
 	});
 	
 	$('.slider_action').slick({
@@ -138,7 +147,7 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		fade: true,
-		adaptiveHeight: true
+		adaptiveHeight: true,
 	});
 	
 	
