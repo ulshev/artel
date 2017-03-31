@@ -184,6 +184,7 @@
 	.reviews_slider  {
 	    
 	    .slick-slide {
+		height: 380px;
 	    }
 	    
 	    .slick-next {
@@ -196,7 +197,8 @@
 		margin-left: 0px;
 	    }
 	}
-	 
+	    .slick-slide {
+		height: 320px;
 		.avatar {
 		    float: none;
 		    display: block;
@@ -205,6 +207,12 @@
 		p {
 		    margin-left:0px;
 		}
+		span + p {
+		    line-height: 213%;
+		    margin-top: 7px;
+		    max-height: 175px;
+		}
+	    }
     }
     
     #partners {

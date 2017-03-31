@@ -201,7 +201,9 @@
 	}
 	
 	.reviews_slider  {
-	    height: 165px;
+	    .slick-slide {
+		height: 175px;
+	    }
 	    .slick-next {
 		    right: 0;
 		    left: auto;

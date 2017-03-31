@@ -2178,8 +2178,8 @@ footer #social a:hover {
     padding: 30px;
     max-width: 500px;
   }
-  #reviews .reviews_slider {
-    height: 165px;
+  #reviews .reviews_slider .slick-slide {
+    height: 175px;
   }
   #reviews .reviews_slider .slick-next {
     right: 0;
@@ -2505,6 +2505,9 @@ footer #social a:hover {
     padding: 30px;
     max-width: 330px;
   }
+  #reviews .reviews_slider .slick-slide {
+    height: 320px;
+  }
   #reviews .reviews_slider .slick-next {
     right: 0;
     left: auto;
@@ -2828,6 +2831,9 @@ footer #social a:hover {
     padding: 20px;
     max-width: 230px;
   }
+  #reviews .reviews_slider .slick-slide {
+    height: 380px;
+  }
   #reviews .reviews_slider .slick-next {
     right: 0;
     left: auto;
@@ -2836,13 +2842,21 @@ footer #social a:hover {
   #reviews .reviews_slider .slick-prev {
     margin-left: 0px;
   }
-  #reviews .avatar {
+  #reviews .slick-slide {
+    height: 320px;
+  }
+  #reviews .slick-slide .avatar {
     float: none;
     display: block;
     margin: 0 auto 20px;
   }
-  #reviews p {
+  #reviews .slick-slide p {
     margin-left: 0px;
+  }
+  #reviews .slick-slide span + p {
+    line-height: 213%;
+    margin-top: 7px;
+    max-height: 175px;
   }
 
   #partners .karusel_partners {
