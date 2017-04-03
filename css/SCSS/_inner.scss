@@ -309,13 +309,14 @@
             background-color: #f8f8fa;
             color: #14172a;
             padding: 30px 30px 0px;
-            width: 42%;
+            width: 620/1288*100%;
             text-align: left;
-            //float: left;
-            display: inline-block;
-            vertical-align: top;
-            margin: 0 20px 50px;
+            float: left;
+            //display: inline-block;
+            //vertical-align: top;
+            //margin: 0 20px 50px;
             position: relative;
+            box-sizing: border-box;
             
             &:after {
                 @include clear();
@@ -350,8 +351,8 @@
             }
         }
         >div:nth-child(2n) {
-            //margin: 0 0 50px 100%-70/1288*100%-42%;
-            //float: none;
+            margin: 0 0 50px 670/1288*100%;
+            float: none;
         }
         >p{
             text-align: center;

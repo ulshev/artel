@@ -320,7 +320,7 @@
 		    span {
 			padding-top: 0;
 			display: none;
-			max-height: 115px;
+			max-height: 113px;
 		    }
 		    
 		    &:hover span {
@@ -359,18 +359,19 @@
     
     #reviews.no_bg {
 	div.reviews_items {
-	    
+	    text-align: center;
 	    >div {
 		width: auto;
 		text-align: left;
 		float: none;
 		//padding-bottom: 30px;
 		margin-bottom: 40px;
-		max-width: 600px;
+		max-width: 660px;
+		display: inline-block;
 		
 	    }
 	    >div:nth-child(2n) {
-		//margin-left: 0;
+		margin-left: 0;
 	    }
 	}
 	
