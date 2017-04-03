@@ -179,20 +179,16 @@ $(document).ready(function() {
 	    $(this).attr('placeholder',$(this).data('placeholder'));
 	});
 	
-	if($('.show_hide').showHide){
-		$('.show_hide').showHide({
 	
-		    speed: 200,  // speed you want the toggle to happen
+	$('.show_hide').showHide({
 	
-		    easing: '',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
+		speed: 1000,  // speed you want the toggle to happen
+		easing: '',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
+		changeText: 1, // if you dont want the button text to change, set this to 0
+		showText: 'Подробнее',// the button text to show when a div is closed
+		hideText: 'Свернуть' // the button text to show when a div is open
 	
-		    changeText: 1, // if you dont want the button text to change, set this to 0
+	});
 	
-		    showText: 'Подробнее',// the button text to show when a div is closed
-	
-		    hideText: 'Свернуть' // the button text to show when a div is open
-	
-		});
-	}
 
 });

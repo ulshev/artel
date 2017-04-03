@@ -1198,7 +1198,7 @@ footer #social a:hover {
   line-height: 217%;
 }
 #reviews p .nikname {
-  padding-left: 30px;
+  padding: 2px 0 2px 30px;
   background: url(images/name_icon.png) left center no-repeat;
   margin-right: 20px;
 }
@@ -1284,6 +1284,12 @@ footer #social a:hover {
 #main_form {
   background: url(images/form_bg.jpg) center center no-repeat;
   background-size: cover;
+  /*.cont {
+      background-image: url(images/cont_icon_call.png);
+  }
+  .cont+.cont {
+      background-image: url(images/cont_icon_letter.png);
+  }*/
 }
 #main_form > div {
   max-width: 1288px;
@@ -1305,7 +1311,7 @@ footer #social a:hover {
   font-size: 1.28em;
   line-height: 130%;
   padding-left: 45px;
-  background: url(images/cont_icon_call.png) left top no-repeat;
+  background: transparent left top no-repeat;
   min-height: 28px;
 }
 #main_form .cont a {
@@ -1316,12 +1322,8 @@ footer #social a:hover {
   color: #1ecad1;
   text-decoration: underline;
 }
-#main_form .cont + .cont {
-  background-image: url(images/cont_icon_letter.png);
-}
 #main_form .cont + .cont + .cont {
   margin-right: 0px;
-  background-image: url(images/cont_icon_address.png);
 }
 #main_form form p {
   max-width: 795px;
@@ -1396,7 +1398,7 @@ footer #social a:hover {
 .content .text .left {
   float: left;
   margin: 10px 60px 50px 0;
-  max-width: 45%;
+  max-width: 33%;
 }
 .content .text .left img {
   width: 100%;
@@ -2001,7 +2003,7 @@ footer #social a:hover {
   }
 
   .content .text .left {
-    margin: 10px 30px 25px 0;
+    margin: 10px 40px 25px 0;
   }
 
   #services .service {
@@ -2407,6 +2409,10 @@ footer #social a:hover {
   #gallery .gallery .gallery_fotos div {
     width: 44.2%;
     height: 200px;
+  }
+
+  .content .text .left {
+    max-width: 46%;
   }
 }
 @media screen and (max-width: 590px) {
@@ -2898,9 +2904,6 @@ footer #social a:hover {
     padding: 20px;
     max-width: 230px;
   }
-  #reviews .reviews_slider .slick-slide {
-    height: 380px;
-  }
   #reviews .reviews_slider .slick-next {
     right: 0;
     left: auto;
@@ -2909,18 +2912,18 @@ footer #social a:hover {
   #reviews .reviews_slider .slick-prev {
     margin-left: 0px;
   }
-  #reviews .slick-slide {
-    height: 320px;
+  #reviews .reviews_slider .slick-slide {
+    height: 410px;
   }
-  #reviews .slick-slide .avatar {
+  #reviews .reviews_slider .slick-slide .avatar {
     float: none;
     display: block;
     margin: 0 auto 20px;
   }
-  #reviews .slick-slide p {
+  #reviews .reviews_slider .slick-slide p {
     margin-left: 0px;
   }
-  #reviews .slick-slide span + p {
+  #reviews .reviews_slider .slick-slide span + p {
     line-height: 213%;
     margin-top: 7px;
     max-height: 175px;
@@ -2987,7 +2990,7 @@ footer #social a:hover {
 
   .content .text .left {
     float: none;
-    margin: 10px 0px 0px 0;
+    margin: 10px 0px 20px 0;
     max-width: 100%;
   }
 

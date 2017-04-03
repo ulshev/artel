@@ -576,7 +576,7 @@
                 line-height: 217%;
                 
                 .nikname {
-                    padding-left: 30px;
+                    padding: 2px 0 2px 30px;
                     background: url(images/name_icon.png) left center no-repeat;
                     margin-right: 20px;
                 }
@@ -671,7 +671,7 @@
         font-size: 1.28em;
         line-height: 130%;
         padding-left: 45px;
-        background: url(images/cont_icon_call.png) left top no-repeat;
+        background: transparent left top no-repeat;
         min-height: 28px;
         
         a {
@@ -683,12 +683,15 @@
             text-decoration: underline;
         }
     }
+    /*.cont {
+        background-image: url(images/cont_icon_call.png);
+    }
     .cont+.cont {
         background-image: url(images/cont_icon_letter.png);
-    }
+    }*/
     .cont+.cont+.cont {
         margin-right: 0px;
-        background-image: url(images/cont_icon_address.png);
+        //background-image: url(images/cont_icon_address.png);
     }
     
     form {
