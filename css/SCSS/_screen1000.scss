@@ -102,7 +102,9 @@
     
     #main_slider {
 	margin-top: 93px;
-        
+        > div:before {
+            background-size: 94% auto;
+        }
         .slider {
             
             .slick-slide, .slide {
@@ -116,7 +118,12 @@
                     font-size: 1.46em;
                     margin-top: 30px;
                 }
-                
+                p.white {
+                    font-size: 1.26em;
+                    &.big_text {
+                        font-size: 1.46em;
+                    }
+                }
                 .slide_copy, .slide_info {
                     bottom: 40px;
                     width: 50%;

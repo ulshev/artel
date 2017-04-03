@@ -627,7 +627,7 @@ footer #social a:hover {
   top: 0;
   left: 0;
   background: #1ecad1 url(images/slide_bg.png) right top no-repeat;
-  background-size: 77.54% auto;
+  background-size: 96.6% auto;
 }
 #main_slider .slider {
   position: relative;
@@ -646,14 +646,23 @@ footer #social a:hover {
   width: 50%;
   float: right;
   margin-left: 30px;
+  margin-top: 3px;
 }
 #main_slider .slider .slick-slide h3, #main_slider .slider .slide h3 {
   font-size: 4.26em;
   margin-top: 170px;
+  margin-bottom: 0;
 }
-#main_slider .slider .slick-slide h3 span, #main_slider .slider .slide h3 span {
+#main_slider .slider .slick-slide p.white, #main_slider .slider .slide p.white {
   color: #fff;
-  display: block;
+  text-transform: uppercase;
+  font-size: 2.13em;
+  line-height: 145%;
+  font-weight: bold;
+}
+#main_slider .slider .slick-slide p.white.big_text, #main_slider .slider .slide p.white.big_text {
+  font-size: 4.26em;
+  line-height: 145%;
 }
 #main_slider .slider .slick-slide .slide_copy, #main_slider .slider .slick-slide .slide_info, #main_slider .slider .slide .slide_copy, #main_slider .slider .slide .slide_info {
   position: absolute;
@@ -1047,7 +1056,7 @@ footer #social a:hover {
 #partners > div {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 77px 0px 18px;
+  padding: 77px 0px 52px;
   text-align: center;
 }
 #partners h2 {
@@ -1281,7 +1290,7 @@ footer #social a:hover {
   margin: 0 auto;
   color: #fff;
   text-align: center;
-  padding: 63px 20px 75px;
+  padding: 63px 20px 50px;
 }
 #main_form h2 {
   margin-bottom: 75px;
@@ -1386,9 +1395,11 @@ footer #social a:hover {
 }
 .content .text .left {
   float: left;
-  max-width: 610px;
   margin: 10px 60px 50px 0;
-  width: 45%;
+  max-width: 45%;
+}
+.content .text .left img {
+  width: 100%;
 }
 .content .text ul {
   display: inline-block;
@@ -1804,6 +1815,9 @@ footer #social a:hover {
     font-size: 3.26em;
     margin-top: 130px;
   }
+  #main_slider .slider .slick-slide p.white.big_text, #main_slider .slider .slide p.white.big_text {
+    font-size: 3.26em;
+  }
   #main_slider .slider .slick-slide .slide_copy, #main_slider .slider .slick-slide .slide_info, #main_slider .slider .slide .slide_copy, #main_slider .slider .slide .slide_info {
     bottom: 50px;
   }
@@ -1897,12 +1911,21 @@ footer #social a:hover {
     margin-right: 6.41711%;
   }
 
+  #main_slider > div:before {
+    background-size: 96% auto;
+  }
   #main_slider .slider .slick-slide, #main_slider .slider .slide {
     padding-bottom: 110px;
   }
   #main_slider .slider .slick-slide h3, #main_slider .slider .slide h3 {
     font-size: 2.46em;
     margin-top: 100px;
+  }
+  #main_slider .slider .slick-slide p.white, #main_slider .slider .slide p.white {
+    font-size: 1.46em;
+  }
+  #main_slider .slider .slick-slide p.white.big_text, #main_slider .slider .slide p.white.big_text {
+    font-size: 2.46em;
   }
   #main_slider .slider .slick-slide .slide_copy, #main_slider .slider .slick-slide .slide_info, #main_slider .slider .slide .slide_copy, #main_slider .slider .slide .slide_info {
     bottom: 40px;
@@ -2131,6 +2154,9 @@ footer #social a:hover {
   #main_slider {
     margin-top: 93px;
   }
+  #main_slider > div:before {
+    background-size: 94% auto;
+  }
   #main_slider .slider .slick-slide, #main_slider .slider .slide {
     padding-bottom: 80px;
   }
@@ -2140,6 +2166,12 @@ footer #social a:hover {
   #main_slider .slider .slick-slide h3, #main_slider .slider .slide h3 {
     font-size: 1.46em;
     margin-top: 30px;
+  }
+  #main_slider .slider .slick-slide p.white, #main_slider .slider .slide p.white {
+    font-size: 1.26em;
+  }
+  #main_slider .slider .slick-slide p.white.big_text, #main_slider .slider .slide p.white.big_text {
+    font-size: 1.46em;
   }
   #main_slider .slider .slick-slide .slide_copy, #main_slider .slider .slick-slide .slide_info, #main_slider .slider .slide .slide_copy, #main_slider .slider .slide .slide_info {
     bottom: 40px;
@@ -2447,15 +2479,33 @@ footer #social a:hover {
   #main_slider {
     margin-top: 80px;
   }
+  #main_slider > div::before {
+    background-size: auto 80%;
+    width: 100%;
+  }
+  #main_slider .slider .slick-slide, #main_slider .slider .slide {
+    padding-bottom: 50px;
+  }
+  #main_slider .slider .slick-slide .slide_img, #main_slider .slider .slide .slide_img {
+    display: none;
+  }
   #main_slider .slider .slick-slide h3, #main_slider .slider .slide h3 {
     font-size: 1.26em;
     margin-top: 20px;
     margin-bottom: 0px;
   }
+  #main_slider .slider .slick-slide p.white, #main_slider .slider .slide p.white {
+    font-size: 0.9em;
+    margin-bottom: 0;
+  }
+  #main_slider .slider .slick-slide p.white.big_text, #main_slider .slider .slide p.white.big_text {
+    font-size: 1.26em;
+  }
   #main_slider .slider .slick-slide .slide_copy, #main_slider .slider .slick-slide .slide_info, #main_slider .slider .slide .slide_copy, #main_slider .slider .slide .slide_info {
-    bottom: 40px;
-    width: 50%;
-    font-size: 0.65em;
+    position: static;
+    width: 100%;
+    text-align: left;
+    font-size: 0.85em;
   }
   #main_slider .slider .slick-slide a.button, #main_slider .slider .slide a.button {
     width: 120px;
@@ -2758,26 +2808,6 @@ footer #social a:hover {
   #main_slider {
     margin-top: 70px;
   }
-  #main_slider > div::before {
-    background: #1ecad1 url("../images/slide_bg.png") no-repeat scroll right center/auto 90%;
-    width: 100%;
-  }
-  #main_slider .slider .slick-slide, #main_slider .slider .slide {
-    padding-bottom: 50px;
-  }
-  #main_slider .slider .slick-slide .slide_img, #main_slider .slider .slide .slide_img {
-    display: none;
-  }
-  #main_slider .slider .slick-slide h3, #main_slider .slider .slide h3 {
-    font-size: 1.56em;
-    margin-top: 30px;
-  }
-  #main_slider .slider .slick-slide .slide_copy, #main_slider .slider .slick-slide .slide_info, #main_slider .slider .slide .slide_copy, #main_slider .slider .slide .slide_info {
-    position: static;
-    width: 100%;
-    text-align: left;
-    font-size: 0.85em;
-  }
 
   #advantages {
     padding-bottom: 0;
@@ -2956,9 +2986,9 @@ footer #social a:hover {
   }
 
   .content .text .left {
-    float: left;
+    float: none;
     margin: 10px 0px 0px 0;
-    width: 100%;
+    max-width: 100%;
   }
 
   .bread_crumbs {

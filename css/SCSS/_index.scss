@@ -40,7 +40,7 @@
             top: 0;
             left: 0;
             background: $color_a url(images/slide_bg.png) right top no-repeat;
-            background-size: 77.54% auto;
+            background-size: 96.6% auto;
         }
     }
     
@@ -60,15 +60,24 @@
                 width: 50%;
                 float: right;
                 margin-left: 30px;
+                margin-top: 3px;
             }
             
             h3 {
                 font-size: 4.26em;
                 margin-top: 170px;
+                margin-bottom: 0;
+            }
+            p.white {
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 2.13em;
+                line-height: 145%;
+                font-weight: bold;
                 
-                span {
-                    color: #fff;
-                    display: block;
+                &.big_text {
+                    font-size: 4.26em;
+                    line-height: 145%;
                 }
             }
             
@@ -432,7 +441,7 @@
     &>div {
         max-width: 1920px;
         margin: 0 auto;
-        padding: 77px 0px 18px;
+        padding: 77px 0px 52px;
         text-align: center;
     }
     h2 {
@@ -645,7 +654,7 @@
         margin: 0 auto;
         color: #fff;
         text-align: center;
-        padding: 63px 20px 75px;
+        padding: 63px 20px 50px;
     }
     
     h2 {

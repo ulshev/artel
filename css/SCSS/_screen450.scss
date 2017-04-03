@@ -39,33 +39,7 @@
     
     #main_slider {
 	margin-top: 70px;
-	
-	> div::before {
-	    background: #1ecad1 url("../images/slide_bg.png") no-repeat scroll right center / auto 90%;
-	    width: 100%;
-	}
         
-        .slider {
-            
-            .slick-slide, .slide {
-		padding-bottom: 50px;
-		
-		.slide_img {
-		    display: none;
-		}
-                h3 {
-                    font-size: 1.56em;
-                    margin-top: 30px;
-                }
-                
-                .slide_copy, .slide_info {
-                    position: static;
-                    width: 100%;
-                    text-align: left;
-		    font-size: 0.85em;
-                }
-            }
-        }
     }
     
     #advantages {
@@ -291,9 +265,9 @@
 	.text {
 	    
 	    .left {
-		float: left;
+		float: none;
 		margin: 10px 0px 0px 0;
-		width: 100%;
+		max-width: 100%;
 	    }
 	}
     }

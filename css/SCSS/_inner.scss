@@ -37,9 +37,12 @@
         
         .left {
             float: left;
-            max-width: 610px;
+            //max-width: 610px;
             margin: 10px 60px 50px 0;
-            width: 45%;
+            max-width: 45%;
+            img {
+                width: 100%;
+            }
         }
     
         ul {

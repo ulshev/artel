@@ -73,21 +73,35 @@
     
     #main_slider {
 	margin-top: 80px;
+	> div::before {
+	    background-size: auto 80%;
+	    width: 100%
+	}
         
         .slider {
             
             .slick-slide, .slide {
-		
+		padding-bottom: 50px;
+		.slide_img {
+		    display: none;
+		}
                 h3 {
                     font-size: 1.26em;
                     margin-top: 20px;
 		    margin-bottom: 0px
                 }
-                
-                .slide_copy, .slide_info {
-                    bottom: 40px;
-                    width: 50%;
-                    font-size: 0.65em;
+                p.white {
+                    font-size: 0.9em;
+		    margin-bottom: 0;
+                    &.big_text {
+                        font-size: 1.26em;
+                    }
+                }
+		.slide_copy, .slide_info {
+                    position: static;
+                    width: 100%;
+                    text-align: left;
+		    font-size: 0.85em;
                 }
                 a.button {
                     width: 120px;
