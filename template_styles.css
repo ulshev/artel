@@ -1847,6 +1847,7 @@ footer #social a:hover {
   position: relative;
   border: 1px solid #dadada;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .vacancy:last-child {
   margin-bottom: 50px;
@@ -2700,6 +2701,38 @@ footer #social a:hover {
     font-size: 1.47em;
   }
 
+  .vacancy {
+    padding: 30px 20px 50px;
+    margin-bottom: 20px;
+  }
+  .vacancy time {
+    float: none;
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  .vacancy > h4 {
+    margin-right: 0px;
+  }
+  .vacancy > p {
+    margin-right: 0px;
+  }
+  .vacancy .salary {
+    float: none;
+    text-align: right;
+  }
+  .vacancy .button {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .vacancy a.button + p {
+    clear: right;
+  }
+  .vacancy .show_hide_div {
+    padding-right: 0px;
+    margin-bottom: -10px;
+  }
+
   .page_404 .content .text {
     padding: 40px 0;
   }
@@ -3077,53 +3110,38 @@ footer #social a:hover {
     font-size: 0.7em;
   }
 
-  .vacancy {
-    padding: 30px 20px 10px;
-    position: relative;
-    border: 1px solid #dadada;
+  .content .text.vacancy {
+    padding: 30px 20px 50px;
     margin-bottom: 20px;
+    font-size: 0.95em;
+    line-height: 145%;
   }
-  .vacancy:last-child {
-    margin-bottom: 50px;
-  }
-  .vacancy time {
+  .content .text.vacancy time {
     float: none;
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
   }
-  .vacancy > h4 {
-    font-size: 18px;
-    color: #1ecad1;
-    margin-top: 0;
+  .content .text.vacancy > h4 {
     margin-right: 0px;
   }
-  .vacancy > p {
-    margin-right: 100px;
-  }
-  .vacancy .salary {
-    font-weight: bold;
-    font-size: 20px;
-    float: right;
+  .content .text.vacancy > p {
     margin-right: 0px;
   }
-  .vacancy .button {
-    float: right;
-    width: 220px;
-    padding: 15px 15px 9px;
-    text-transform: none;
-    font-size: 16px;
-    margin-top: -30px;
-    margin-right: -100px;
+  .content .text.vacancy .salary {
+    float: none;
+    text-align: right;
   }
-  .vacancy a.show_hide {
-    position: absolute;
-    bottom: 30px;
-    right: 20px;
+  .content .text.vacancy .button {
+    margin-top: 0px;
+    margin-right: 0px;
   }
-  .vacancy .show_hide_div {
-    padding-right: 100px;
-    overflow: visible !important;
-    padding-bottom: 0px;
+  .content .text.vacancy a.button + p {
+    clear: right;
+  }
+  .content .text.vacancy .show_hide_div {
+    padding-right: 0px;
     margin-bottom: -10px;
-    display: none;
   }
 
   .action .foto {

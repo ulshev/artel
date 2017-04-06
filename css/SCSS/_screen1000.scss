@@ -477,6 +477,40 @@
 	}
     }
     
+    .vacancy {
+	padding: 30px 20px 50px;
+	margin-bottom: 20px;
+	
+	
+	time {
+	    float: none;
+	    display: block;
+	    text-align: right;
+	    margin-bottom: 10px;
+	}
+	>h4 {
+	    margin-right: 0px;
+	}
+	>p {
+	    margin-right: 0px;
+	}
+	.salary {
+	    float: none;
+	    text-align: right;
+	}
+	.button {
+	    margin-top: 0px;
+	    margin-right: 0px;
+	}
+	a.button + p {
+	    clear: right;
+	}
+	.show_hide_div {
+	    padding-right: 0px;
+	    margin-bottom: -10px;
+	}
+    }
+    
     
     .page_404 {
         .content {
