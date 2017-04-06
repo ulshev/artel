@@ -18,15 +18,13 @@
         }
         
         nav {
-            margin: 25px auto;
+            margin: 10px auto;
             text-align: center;
             
             
-            ul li {
-                margin-right: 25/1634*100%;
-            }
-            ul li:before {
-                margin-right: 15px;
+            ul.main_menu li {
+                margin-right: 15/1634*100%;
+                padding: 15px 10px 10px 10px;
             }
         }
     }
@@ -151,6 +149,26 @@
             >div {
                 //width: 38%;
                 //margin: 0 20px 40px;
+            }
+        }
+    }
+    
+    
+    .page_404 {
+        .content {
+            .text {
+                padding: 80px 0;
+            }
+            
+            h2 {
+                font-size: 283px;
+                line-height: 100%;
+                margin-bottom: 40px;
+            }
+            h2+p {
+                font-size: 51px;
+                line-height: 145%;
+                margin-bottom: 80px;
             }
         }
     }

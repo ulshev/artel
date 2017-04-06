@@ -21,7 +21,7 @@
     }
     
     #logo {
-	margin-right: 120/1634*100%;
+	margin-right: 100/1634*100%;
 	width: 250px;
 	float: left;
 	font-size: 25px;
@@ -53,37 +53,117 @@
     }
     
     nav {
-	margin: 30px;
+	margin: 15px 30px 10px;
 	padding: 0;
 	text-align: left;
 	
         
-        ul {
+        ul.main_menu {
             counter-reset:list;
-        }
-        ul li {
-            margin-right: 58/1634*100%;
-            text-transform: uppercase;
-            position: relative;
-            font-weight: bold;
-            display: inline-block;
-            vertical-align: top;
-        }
-        ul li:before {
-            counter-increment:list;
-            content: '0'counter(list); 
-            opacity: 0.2;
-            margin-right: 5px;
-        }
-        ul li a {
-            color: #14172a;
-            text-decoration: none;
-        }                    
-        ul li.active>a {
-            color: #fff;
-        }
-        ul li a:hover {
-            text-decoration: underline;
+            li {
+                margin-right: 28/1634*100%;
+                text-transform: uppercase;
+                position: relative;
+                font-weight: bold;
+                display: inline-block;
+                vertical-align: top;
+                position: relative;
+                height: 25px;
+                padding: 15px 23px 10px 10px;
+                border-bottom: 1px solid transparent;
+            }
+            li:before {
+                counter-increment:list;
+                content: '0'counter(list); 
+                opacity: 0.2;
+                margin-right: 5px;
+            }
+            a {
+                color: #14172a;
+                text-decoration: none;
+            }                    
+            .active>a {
+                color: #fff;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            
+            ul.submenu1 {
+                position: absolute;
+                left: 0;
+                top: 51px;
+                background-color: #14172a;
+                text-align: left;
+                padding: 35px 40px;
+                display: none;
+                width: 290px;
+                
+                
+                li {
+                    padding: 0;
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                    height: auto;
+                    display: block;
+                    
+                    &:before {
+                        display: none;
+                    }
+                }
+                
+                a {
+                    color: $color_a;
+                    //white-space: nowrap;
+                }
+                .sm_link a { 
+                    &:after {
+                        display: inline-block;
+                        font-size: 0;
+                        border: 5px solid transparent;
+                        border-left-color: $color_a;
+                        content: '';
+                        margin-left: 10px;
+                    } 
+                }
+                
+                .sm_link.open a {
+                    &:after {
+                        border-left-color: transparent;
+                        border-top-color: $color_a;
+                    } 
+                }
+                
+                ul.submenu2 {
+                    padding: 10px 0 5px;
+                    display: none;
+                    
+                    li {
+                        text-transform: none;
+                        font-weight: 400;
+                        letter-spacing: 0.05em;
+                    }
+                    a {
+                        color: #fff;
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            
+            >li.open {
+                background-color: #14172a;
+                border-bottom: 1px solid $color_a;
+                
+                >a {
+                    color: #fff;
+                }
+                &:before {
+                    color: $color_a;
+                    opacity: 1;
+                }
+            }
         }
     }
     

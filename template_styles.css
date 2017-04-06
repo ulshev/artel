@@ -256,10 +256,12 @@ a.button:active {
   text-decoration: underline;
   color: #1ecad1;
 }
-.gallery p a.other {
+.gallery p a.all {
   float: right;
   margin-left: 3.67197%;
   margin-right: 0;
+}
+.gallery p a.other {
   color: #1ecad1;
 }
 .gallery p a.button {
@@ -416,7 +418,7 @@ a.button:active {
   clear: both;
 }
 #header #logo {
-  margin-right: 7.34394%;
+  margin-right: 6.11995%;
   width: 250px;
   float: left;
   font-size: 25px;
@@ -442,36 +444,101 @@ a.button:active {
   opacity: 0.6;
 }
 #header nav {
-  margin: 30px;
+  margin: 15px 30px 10px;
   padding: 0;
   text-align: left;
 }
-#header nav ul {
+#header nav ul.main_menu {
   counter-reset: list;
 }
-#header nav ul li {
-  margin-right: 3.54957%;
+#header nav ul.main_menu li {
+  margin-right: 1.71359%;
   text-transform: uppercase;
   position: relative;
   font-weight: bold;
   display: inline-block;
   vertical-align: top;
+  position: relative;
+  height: 25px;
+  padding: 15px 23px 10px 10px;
+  border-bottom: 1px solid transparent;
 }
-#header nav ul li:before {
+#header nav ul.main_menu li:before {
   counter-increment: list;
   content: "0" counter(list);
   opacity: 0.2;
   margin-right: 5px;
 }
-#header nav ul li a {
+#header nav ul.main_menu a {
   color: #14172a;
   text-decoration: none;
 }
-#header nav ul li.active > a {
+#header nav ul.main_menu .active > a {
   color: #fff;
 }
-#header nav ul li a:hover {
+#header nav ul.main_menu a:hover {
   text-decoration: underline;
+}
+#header nav ul.main_menu ul.submenu1 {
+  position: absolute;
+  left: 0;
+  top: 51px;
+  background-color: #14172a;
+  text-align: left;
+  padding: 35px 40px;
+  display: none;
+  width: 290px;
+}
+#header nav ul.main_menu ul.submenu1 li {
+  padding: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  height: auto;
+  display: block;
+}
+#header nav ul.main_menu ul.submenu1 li:before {
+  display: none;
+}
+#header nav ul.main_menu ul.submenu1 a {
+  color: #1ecad1;
+}
+#header nav ul.main_menu ul.submenu1 .sm_link a:after {
+  display: inline-block;
+  font-size: 0;
+  border: 5px solid transparent;
+  border-left-color: #1ecad1;
+  content: '';
+  margin-left: 10px;
+}
+#header nav ul.main_menu ul.submenu1 .sm_link.open a:after {
+  border-left-color: transparent;
+  border-top-color: #1ecad1;
+}
+#header nav ul.main_menu ul.submenu1 ul.submenu2 {
+  padding: 10px 0 5px;
+  display: none;
+}
+#header nav ul.main_menu ul.submenu1 ul.submenu2 li {
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+#header nav ul.main_menu ul.submenu1 ul.submenu2 a {
+  color: #fff;
+}
+#header nav ul.main_menu ul.submenu1 ul.submenu2 a:after {
+  display: none;
+}
+#header nav ul.main_menu > li.open {
+  background-color: #14172a;
+  border-bottom: 1px solid #1ecad1;
+}
+#header nav ul.main_menu > li.open > a {
+  color: #fff;
+}
+#header nav ul.main_menu > li.open:before {
+  color: #1ecad1;
+  opacity: 1;
 }
 
 #index #header, #contacts #header {
@@ -560,8 +627,7 @@ footer .foo_menu ul {
   vertical-align: top;
   font: 300 0.86em/145% "Raleway";
   letter-spacing: 0.025em;
-  width: 22.99465%;
-  margin-right: 2.13904%;
+  width: 32.62032%;
 }
 footer .foo_menu ul:last-child {
   margin-right: 0;
@@ -1338,10 +1404,7 @@ footer #social a:hover {
 }
 
 .fancybox-enabled {
-  overflow: auto;
-}
-.fancybox-enabled .fancybox-controls--canGrab .fancybox-placeholder {
-  max-width: 1000px;
+  box-sizing: border-box;
 }
 .fancybox-enabled .fancybox-button--left, .fancybox-enabled .fancybox-button--right {
   position: fixed;
@@ -1779,6 +1842,159 @@ footer #social a:hover {
   opacity: 0.85;
 }
 
+.vacancy {
+  padding: 30px 20px 10px;
+  position: relative;
+  border: 1px solid #dadada;
+  margin-bottom: 20px;
+}
+.vacancy:last-child {
+  margin-bottom: 50px;
+}
+.vacancy time {
+  float: right;
+  color: #898989;
+  font-size: 14px;
+  margin-left: 20px;
+}
+.vacancy > h4 {
+  font-size: 18px;
+  color: #1ecad1;
+  margin-top: 0;
+  margin-right: 200px;
+}
+.vacancy > p {
+  margin-right: 200px;
+}
+.vacancy .salary {
+  font-weight: bold;
+  font-size: 20px;
+  float: right;
+  margin-right: 0px;
+}
+.vacancy .button {
+  float: right;
+  width: 220px;
+  padding: 15px 15px 9px;
+  text-transform: none;
+  font-size: 16px;
+  margin-top: -30px;
+  margin-right: -100px;
+}
+.vacancy a.show_hide {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+}
+.vacancy .show_hide_div {
+  padding-right: 100px;
+  overflow: visible !important;
+  padding-bottom: 0px;
+  margin-bottom: -10px;
+  display: none;
+}
+
+.action {
+  border-top: 1px solid #e4e4e4;
+  padding: 30px 0;
+}
+.action:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.action .foto {
+  float: left;
+  width: 47.36025%;
+  max-height: 240px;
+  overflow: hidden;
+  line-height: 200px;
+}
+.action .foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.action .info {
+  margin-left: 52.01863%;
+}
+.action .info h3 {
+  font-size: 1.87em;
+  margin-top: -5px;
+}
+.action .info h3.fn:after {
+  content: ' *';
+  color: #1ecad1;
+}
+.action .info p {
+  margin-bottom: 0;
+}
+.action .info p.footnote {
+  color: #1ecad1;
+}
+
+.page_404 .bread_crumbs {
+  padding: 0;
+}
+.page_404 .content {
+  text-align: center;
+  padding-bottom: 0;
+  max-width: none;
+  display: table-row;
+  height: 100%;
+}
+.page_404 .content:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #f5f5f5 url(images/bg_404.png) left top no-repeat;
+  background-size: auto 100%;
+}
+.page_404 .content .text {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 100px 0;
+}
+.page_404 .content .text:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 10%;
+  height: 100%;
+  z-index: 1;
+  background: url(images/shadow_404.png) left top no-repeat;
+  background-size: auto 100%;
+}
+.page_404 .content h2 {
+  font-size: 283px;
+  line-height: 100%;
+  color: #1ecad1;
+  margin-bottom: 60px;
+}
+.page_404 .content h2 + p {
+  font-size: 51px;
+  line-height: 145%;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 100px;
+}
+.page_404 .content a.button {
+  width: auto;
+  position: relative;
+  z-index: 2;
+}
+
 @media screen and (max-width: 1600px) {
   #header {
     min-height: 50px;
@@ -1796,14 +2012,12 @@ footer #social a:hover {
     line-height: 145%;
   }
   #header nav {
-    margin: 25px auto;
+    margin: 10px auto;
     text-align: center;
   }
-  #header nav ul li {
-    margin-right: 1.52999%;
-  }
-  #header nav ul li:before {
-    margin-right: 15px;
+  #header nav ul.main_menu li {
+    margin-right: 0.91799%;
+    padding: 15px 10px 10px 10px;
   }
 
   footer > div {
@@ -1883,6 +2097,20 @@ footer #social a:hover {
     background-size: auto 100%;
     min-height: 510px;
   }
+
+  .page_404 .content .text {
+    padding: 80px 0;
+  }
+  .page_404 .content h2 {
+    font-size: 283px;
+    line-height: 100%;
+    margin-bottom: 40px;
+  }
+  .page_404 .content h2 + p {
+    font-size: 51px;
+    line-height: 145%;
+    margin-bottom: 80px;
+  }
 }
 @media screen and (max-width: 1270px) {
   #header > div {
@@ -1896,14 +2124,24 @@ footer #social a:hover {
     margin: 14px 0px 14px 5px;
   }
   #header nav {
-    margin: 19px;
+    margin: 9px;
   }
-  #header nav ul li {
-    margin-right: 0.91799%;
-    padding-left: 0px;
+  #header nav ul.main_menu li {
+    padding: 10px 7px 5px 7px;
+    margin: 0;
   }
-  #header nav ul li:before {
+  #header nav ul.main_menu li:before {
     margin-right: 5px;
+  }
+  #header nav ul.main_menu ul.submenu1 {
+    position: absolute;
+    left: 0;
+    top: 41px;
+    background-color: #14172a;
+    text-align: left;
+    padding: 35px 40px;
+    display: none;
+    width: 230px;
   }
 
   footer > div {
@@ -2064,8 +2302,26 @@ footer #social a:hover {
     margin-right: 15px;
     margin-left: 15px;
   }
+
+  .action .info h3 {
+    font-size: 1.67em;
+  }
+
+  .page_404 .content .text {
+    padding: 60px 0;
+  }
+  .page_404 .content h2 {
+    font-size: 203px;
+    line-height: 100%;
+    margin-bottom: 30px;
+  }
+  .page_404 .content h2 + p {
+    font-size: 40px;
+    line-height: 145%;
+    margin-bottom: 40px;
+  }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 999px) {
   #header {
     position: fixed;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -2095,32 +2351,57 @@ footer #social a:hover {
     left: 0;
     background-color: #14172a;
   }
-  #header nav ul {
+  #header nav ul.main_menu {
     position: absolute;
-    width: 200px;
+    width: 280px;
     left: 50%;
-    margin-left: -110px;
+    margin-left: -140px;
     margin-top: 10px;
-    padding: 15px 10px;
+    padding: 15px 0px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: block;
+    overflow: hidden;
+    max-height: 400px;
+    overflow: auto;
   }
-  #header nav ul li {
+  #header nav ul.main_menu li {
     margin-right: 0;
-    padding-left: 30px;
     display: block;
     text-align: left;
     font-size: 1.3em;
+    height: auto;
+    padding: 0 0 0 30px;
   }
-  #header nav ul li a {
+  #header nav ul.main_menu li a {
     display: inline-block;
     padding: 15px 0;
   }
-  #header nav ul li.active > a, #header nav a:hover {
+  #header nav ul.main_menu ul.submenu1 {
+    position: relative;
+    top: 0;
+    margin-left: -30px;
+    padding: 20px 0px 10px 30px;
+    width: 100%;
+  }
+  #header nav ul.main_menu ul.submenu1 li {
+    font-size: 0.80em;
+    padding-right: 20px;
+  }
+  #header nav ul.main_menu ul.submenu1 li a {
+    padding: 10px 0;
+  }
+  #header nav ul.main_menu ul.submenu1 ul.submenu2 {
+    font-size: 1.2em;
+  }
+  #header nav ul.main_menu ul.submenu1 ul.submenu2 li a {
+    padding: 5px 0;
+  }
+  #header nav ul.main_menu li.active > a, #header nav a:hover {
     color: #1ecad1;
     text-decoration: underline;
   }
-  #header nav ul li:before {
+  #header nav ul.main_menu li:before {
     margin-right: 5px;
   }
 
@@ -2220,6 +2501,10 @@ footer #social a:hover {
 
   #gallery .gallery p a {
     font-size: 0.70em;
+    line-height: 145%;
+  }
+  #gallery .gallery p a.all {
+    margin-top: 6px;
   }
   #gallery .gallery .gallery_fotos div {
     width: 44.2%;
@@ -2403,6 +2688,30 @@ footer #social a:hover {
     width: 175px;
     margin-right: 10px;
     margin-left: 10px;
+  }
+
+  .action .foto {
+    width: 47.36025%;
+  }
+  .action .info {
+    margin-left: 49.68944%;
+  }
+  .action .info h3 {
+    font-size: 1.47em;
+  }
+
+  .page_404 .content .text {
+    padding: 40px 0;
+  }
+  .page_404 .content h2 {
+    font-size: 150px;
+    line-height: 100%;
+    margin-bottom: 20px;
+  }
+  .page_404 .content h2 + p {
+    font-size: 30px;
+    line-height: 145%;
+    margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -2766,6 +3075,85 @@ footer #social a:hover {
     margin-left: 5px;
     height: 43px;
     font-size: 0.7em;
+  }
+
+  .vacancy {
+    padding: 30px 20px 10px;
+    position: relative;
+    border: 1px solid #dadada;
+    margin-bottom: 20px;
+  }
+  .vacancy:last-child {
+    margin-bottom: 50px;
+  }
+  .vacancy time {
+    float: none;
+  }
+  .vacancy > h4 {
+    font-size: 18px;
+    color: #1ecad1;
+    margin-top: 0;
+    margin-right: 0px;
+  }
+  .vacancy > p {
+    margin-right: 100px;
+  }
+  .vacancy .salary {
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    margin-right: 0px;
+  }
+  .vacancy .button {
+    float: right;
+    width: 220px;
+    padding: 15px 15px 9px;
+    text-transform: none;
+    font-size: 16px;
+    margin-top: -30px;
+    margin-right: -100px;
+  }
+  .vacancy a.show_hide {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+  }
+  .vacancy .show_hide_div {
+    padding-right: 100px;
+    overflow: visible !important;
+    padding-bottom: 0px;
+    margin-bottom: -10px;
+    display: none;
+  }
+
+  .action .foto {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .action .info {
+    margin-left: 0;
+  }
+  .action .info h3 {
+    font-size: 1.13em;
+  }
+
+  .page_404 .content .text {
+    padding: 40px 0;
+  }
+  .page_404 .content h2 {
+    font-size: 100px;
+    line-height: 100%;
+    margin-bottom: 10px;
+  }
+  .page_404 .content h2 + p {
+    font-size: 20px;
+    line-height: 145%;
+    margin-bottom: 20px;
+  }
+  .page_404 .content .button {
+    padding: 15px 15px 9px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 510px) {

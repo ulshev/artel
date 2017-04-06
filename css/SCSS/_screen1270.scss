@@ -14,15 +14,29 @@
         }
         
         nav {
-            margin: 19px;
+            margin: 9px;
             
             
-            ul li {
-                margin-right: 15/1634*100%;
-                padding-left: 0px;
-            }
-            ul li:before {
-                margin-right: 5px;
+            ul.main_menu {
+                
+                li {
+                    padding: 10px 7px 5px 7px;
+                    margin: 0;
+                }
+                li:before {
+                    margin-right: 5px;
+                }
+                
+                ul.submenu1 {
+                    position: absolute;
+                    left: 0;
+                    top: 41px;
+                    background-color: #14172a;
+                    text-align: left;
+                    padding: 35px 40px;
+                    display: none;
+                    width: 230px;
+                }
             }
         }
         
@@ -259,5 +273,32 @@
     }
     
     
+    .action {
+	.info {
+	    
+	    h3 {
+		font-size: 1.67em;
+	    }
+	}
+    }
+    
+    .page_404 {
+        .content {
+            .text {
+                padding: 60px 0;
+            }
+            h2 {
+                font-size: 203px;
+                line-height: 100%;
+                margin-bottom: 30px;
+            }
+            h2+p {
+                font-size: 40px;
+                line-height: 145%;
+                margin-bottom: 40px;
+            }
+        }
+        
+    }
     
 }

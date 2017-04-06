@@ -1,4 +1,4 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 999px) {
     #header {
 	
 	position: fixed;
@@ -31,33 +31,65 @@
 		}
 	    }
             
-            ul {
+            ul.main_menu {
 		position: absolute;
-		width: 200px;
+		width: 280px;
 		left: 50%;
-		margin-left: -110px;
+		margin-left: -140px;
 		margin-top: 10px;
-		padding: 15px 10px;
+		padding: 15px 0px;
 		background-color: #fff;
-		box-shadow: 0 0 10px rgba(0,0,0,0.3)
-	    }
-            ul li {
-                margin-right: 0;
-                padding-left: 30px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.3);
 		display: block;
-		text-align: left;
-		font-size: 1.3em;
+		overflow: hidden;
+		max-height: 400px;
+		overflow: auto;
 		
-		a {
-		    display: inline-block;
-		    padding: 15px 0;
+		li {
+		    margin-right: 0;
+		    display: block;
+		    text-align: left;
+		    font-size: 1.3em;
+		    height: auto;
+		    padding: 0 0 0 30px;
+		    
+		    a {
+			display: inline-block;
+			padding: 15px 0;
+		    }
 		}
-            }
-	    ul li.active>a, a:hover {
+		    
+		ul.submenu1 {
+		    position: relative;
+		    top: 0;
+		    margin-left: -30px;
+		    padding: 20px 0px 10px 30px;
+		    width: 100%;
+		    
+		    li {
+			font-size: 0.80em;
+			padding-right: 20px;
+			
+			a {
+			    padding: 10px 0;
+			}
+		    }
+		    
+		    ul.submenu2 {
+			font-size: 1.2em;
+			li {
+			    a {
+				padding: 5px 0;
+			    }
+			}
+		    }
+		}
+	    }
+	    ul.main_menu li.active>a, a:hover {
 		color: $color_a;
 		text-decoration: underline;
 	    }
-            ul li:before {
+            ul.main_menu li:before {
                 margin-right: 5px;
             }
 	    
@@ -98,6 +130,10 @@
     h1 {
 	font-size: 2.34em;
 	line-height: 145%;
+    }
+    
+    h3 {
+	
     }
     
     #main_slider {
@@ -182,6 +218,10 @@
 	    p{
 		a{
 		    font-size: 0.70em;
+		    line-height: 145%;
+		}
+		a.all {
+		    margin-top: 6px;
 		}
 		
 	    }
@@ -421,6 +461,41 @@
                 margin-left: 10px;
             }
         }
+    }
+    
+    
+    .action {
+	.foto {
+	    width: 610/1288*100%;
+	}
+	.info {
+	    margin-left: 640/1288*100%;
+	    
+	    h3 {
+		font-size: 1.47em;
+	    }
+	}
+    }
+    
+    
+    .page_404 {
+        .content {
+            .text {
+                padding: 40px 0;
+            }
+            
+            h2 {
+                font-size: 150px;
+                line-height: 100%;
+                margin-bottom: 20px;
+            }
+            h2+p {
+                font-size: 30px;
+                line-height: 145%;
+                margin-bottom: 40px;
+            }
+        }
+        
     }
     
     

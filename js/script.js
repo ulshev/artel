@@ -35,6 +35,65 @@ $(document).ready(function() {
 		   $('.main_menu').slideDown(500);
 		}
 	});
+	
+	var width_win = $(window).width();
+	if (width_win > 999) {
+		$('.main_menu li').mouseenter(function(){
+			if ($(this).children('.submenu1').css("display") == "none") {
+				
+				$(this).children('.submenu1').slideDown(500);
+				$(this).addClass('open');
+			}
+		});
+		$('.submenu1 li').mouseenter(function(){
+			if ($(this).children('.submenu2').css("display") == "none") {
+				
+				$(this).children('.submenu2').slideDown(500);
+				$(this).addClass('open');
+			}
+		});
+		$('.main_menu li').mouseleave(function(){
+			if ($(this).children('.submenu1').css("display") == "block") {
+				
+				$(this).children('.submenu1').slideUp(500);
+				$(this).removeClass('open');
+				$(this).children('.submenu1').children('li').children('.submenu2').slideUp(500);
+				$(this).children('.submenu1').children('li').removeClass('open');
+			}
+		});
+	}else{
+		$('.main_menu li').click(function(){
+			if ($(this).children('.submenu1').css("display") == "none") {
+				
+				$(this).children('.submenu1').slideDown(500);
+				$(this).addClass('open');
+			}else{
+				//$(this).children('.submenu1').slideUp(500);
+				//$(this).removeClass('open');
+			}
+		});
+		$('.submenu1 li').click(function(){
+			if ($(this).children('.submenu2').css("display") == "none") {
+				$(this).children('.submenu2').slideDown(500);
+				$(this).addClass('open');
+				$(this).parent('.submenu1').slideDown(500);
+			}else{
+				$(this).children('.submenu2').slideUp(500);
+				$(this).removeClass('open');
+			}
+		});
+		$('.menu_batton_mob').click(function(){
+			if ($('.main_menu').css("display") == "block") {
+				
+				$('.main_menu').children('li').children('.submenu1').slideUp(500);
+				$('.main_menu').children('li').removeClass('open');
+				$('.main_menu').children('li').children('.submenu1').children('li').children('.submenu2').slideUp(500);
+				$('.main_menu').children('li').children('.submenu1').children('li').removeClass('open');
+			}
+		});
+	}
+	
+	
 	$('.show_more').focus(function(){
 		$('.show_more a span').slideDown(500);
 
@@ -182,13 +241,16 @@ $(document).ready(function() {
 	
 	$('.show_hide').showHide({
 	
-		speed: 1000,  // speed you want the toggle to happen
+		speed: 500,  // speed you want the toggle to happen
 		easing: '',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
 		changeText: 1, // if you dont want the button text to change, set this to 0
 		showText: 'Подробнее',// the button text to show when a div is closed
 		hideText: 'Свернуть' // the button text to show when a div is open
 	
 	});
+	
+	
+	
 	
 
 });
