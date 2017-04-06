@@ -1611,7 +1611,7 @@ footer #social a:hover {
 }
 .content #services > div .service {
   width: 32.7%;
-  margin: 0 1.5 8px 1.2%;
+  margin: 0 1.5% 8px 1.2%;
 }
 .content #services > div .service a {
   position: absolute;
@@ -1903,6 +1903,9 @@ footer #social a:hover {
   content: "";
   display: block;
   clear: both;
+}
+.action:first-child {
+  border-top: 0;
 }
 .action .foto {
   float: left;
@@ -2636,7 +2639,7 @@ footer #social a:hover {
   }
   #contacts .content .text {
     background-size: auto 100%;
-    background-position: center lrft;
+    background-position: center left;
     min-height: 410px;
   }
   #contacts .content h1 {

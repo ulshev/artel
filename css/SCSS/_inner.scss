@@ -182,7 +182,7 @@
         padding: 50px 0 ;
         .service {
             width: 32.7%;
-            margin: 0 1.5 8px 1.2%;
+            margin: 0 1.5% 8px 1.2%;
             
             a {
                 position: absolute;
@@ -507,7 +507,9 @@
     &:after {
         @include clear();
     }
-    
+    &:first-child {
+        border-top: 0;
+    }
     .foto {
         float: left;
         width: 610/1288*100%;
