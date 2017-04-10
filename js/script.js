@@ -67,6 +67,16 @@ $(document).ready(function() {
 				
 				$(this).children('.submenu1').slideDown(500);
 				$(this).addClass('open');
+				
+				$(function(){
+					$(document).on('click', '.main_menu li a', function(e) {
+					    var count = $(this).data('count');
+					    if(!count) {
+						$(this).data('count', 1);
+						e.preventDefault();
+					    }
+					});
+				});
 			}else{
 				//$(this).children('.submenu1').slideUp(500);
 				//$(this).removeClass('open');
@@ -214,8 +224,8 @@ $(document).ready(function() {
 		dots: false,
 		speed: 1500,
 		fade: true,
-		//autoplay: true,
-		//autoplaySpeed: 1500,
+		autoplay: true,
+		autoplaySpeed: 1500,
 	});
 	/*$(".slider").sudoSlider({
 		continuous: true,

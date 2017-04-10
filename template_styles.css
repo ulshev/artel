@@ -1938,6 +1938,10 @@ footer #social a:hover {
   color: #1ecad1;
 }
 
+h1 + .action {
+  border-top: 0;
+}
+
 .page_404 .bread_crumbs {
   padding: 0;
 }
@@ -3090,7 +3094,7 @@ footer #social a:hover {
     line-height: 145%;
   }
   .popup .form label {
-    font-size: 0.74em;
+    font-size: 0.94em;
     line-height: 145%;
     padding-left: 7px;
   }
